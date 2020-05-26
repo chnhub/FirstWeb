@@ -19,14 +19,9 @@ class BasePage(object):
         debug('调用浏览器')
         brower_type = str(brower_type)
         if 'chrome' in brower_type or '谷歌' in brower_type:
-<<<<<<< HEAD
             debug('使用chrome浏览器')
             brower_type = '1'
             
-=======
-            brower_type = '1'
-            debug('使用chrome浏览器')
->>>>>>> b4277a6e754c0523157130a2336326bfd1de4b18
         elif 'fire' in brower_type or '火狐' in brower_type:
             brower_type = '2'
         elif 'ie' in brower_type:
