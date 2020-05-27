@@ -1,0 +1,144 @@
+INFO 2020-05-27 00:36:53,526  logging.py[line:27] 调用浏览器
+INFO 2020-05-27 00:37:33,822  logging.py[line:27] 调用浏览器
+INFO 2020-05-27 00:37:33,823  logging.py[line:27] 使用chrome浏览器
+INFO 2020-05-28 00:29:27,892  logging.py[line:31] 调用浏览器
+INFO 2020-05-28 00:29:53,663  logging.py[line:31] 调用浏览器
+INFO 2020-05-28 00:36:45,683  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:36:45,683  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:36:45,683  log.py[line:28] 使用chrome浏览器
+INFO 2020-05-28 00:38:41,104  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:38:41,104  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:38:41,104  log.py[line:28] 使用chrome浏览器
+INFO 2020-05-28 00:38:41,105  log.py[line:28] 选择谷歌浏览器
+INFO 2020-05-28 00:38:41,109  log.py[line:28] 初始化浏览器失败，原因：[WinError 87] 参数错误。
+INFO 2020-05-28 00:38:41,109  log.py[line:28] 打开浏览器结束
+INFO 2020-05-28 00:41:01,428  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:41:01,428  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:41:01,428  log.py[line:28] 使用chrome浏览器
+INFO 2020-05-28 00:41:01,429  log.py[line:28] 选择谷歌浏览器
+INFO 2020-05-28 00:41:01,432  log.py[line:28] 初始化浏览器失败，原因：[WinError 87] 参数错误。
+INFO 2020-05-28 00:41:49,186  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:41:49,186  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:41:49,186  log.py[line:28] 使用chrome浏览器
+INFO 2020-05-28 00:41:49,187  log.py[line:28] 选择谷歌浏览器
+INFO 2020-05-28 00:41:49,191  log.py[line:28] 初始化浏览器失败，原因：[WinError 87] 参数错误。
+INFO 2020-05-28 00:41:49,195  log.py[line:28] 初始化函数结尾
+INFO 2020-05-28 00:42:03,812  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:42:03,813  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:42:03,813  log.py[line:28] 使用chrome浏览器
+INFO 2020-05-28 00:42:03,813  log.py[line:28] 选择谷歌浏览器
+INFO 2020-05-28 00:42:03,817  log.py[line:28] 初始化浏览器失败，原因：[WinError 87] 参数错误。
+INFO 2020-05-28 00:42:03,820  log.py[line:28] 初始化函数结尾
+INFO 2020-05-28 00:42:04,652  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:42:04,652  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:42:04,653  log.py[line:28] 使用chrome浏览器
+INFO 2020-05-28 00:42:04,653  log.py[line:28] 选择谷歌浏览器
+INFO 2020-05-28 00:42:04,657  log.py[line:28] 初始化浏览器失败，原因：[WinError 87] 参数错误。
+INFO 2020-05-28 00:42:04,661  log.py[line:28] 初始化函数结尾
+INFO 2020-05-28 00:42:09,974  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:42:09,974  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:42:09,974  log.py[line:28] 使用chrome浏览器
+INFO 2020-05-28 00:42:09,974  log.py[line:28] 选择谷歌浏览器
+INFO 2020-05-28 00:42:09,979  log.py[line:28] 初始化浏览器失败，原因：[WinError 87] 参数错误。
+INFO 2020-05-28 00:42:09,982  log.py[line:28] 初始化函数结尾
+INFO 2020-05-28 00:42:38,027  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:42:38,028  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:42:38,028  log.py[line:28] 使用chrome浏览器
+INFO 2020-05-28 00:42:38,029  log.py[line:28] 选择谷歌浏览器
+INFO 2020-05-28 00:42:38,033  log.py[line:28] 初始化浏览器失败，原因：[WinError 87] 参数错误。
+INFO 2020-05-28 00:42:38,034  log.py[line:28] 初始化函数结尾
+INFO 2020-05-28 00:42:40,863  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:42:40,863  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:42:40,863  log.py[line:28] 使用chrome浏览器
+INFO 2020-05-28 00:42:40,863  log.py[line:28] 选择谷歌浏览器
+INFO 2020-05-28 00:42:40,867  log.py[line:28] 初始化浏览器失败，原因：[WinError 87] 参数错误。
+INFO 2020-05-28 00:42:40,869  log.py[line:28] 初始化函数结尾
+INFO 2020-05-28 00:43:19,918  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:43:19,918  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:43:19,918  log.py[line:28] 使用chrome浏览器
+INFO 2020-05-28 00:43:19,919  log.py[line:28] 选择谷歌浏览器
+INFO 2020-05-28 00:43:19,922  log.py[line:28] 初始化浏览器失败，原因：[WinError 87] 参数错误。
+INFO 2020-05-28 00:43:19,924  log.py[line:28] Traceback (most recent call last):
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 38, in open_brower
+    driver = webdriver.Chrome(url)
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
+    self.service.start()
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 854, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 1307, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+OSError: [WinError 87] 参数错误。
+
+INFO 2020-05-28 00:43:19,924  log.py[line:28] 初始化函数结尾
+INFO 2020-05-28 00:48:12,170  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:48:12,170  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:48:12,170  log.py[line:28] 使用chrome浏览器
+INFO 2020-05-28 00:48:12,171  log.py[line:28] 选择谷歌浏览器
+INFO 2020-05-28 00:48:13,922  log.py[line:28] 初始化浏览器失败，原因：Message: unknown error: cannot find Chrome binary
+
+INFO 2020-05-28 00:48:13,924  log.py[line:28] Traceback (most recent call last):
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 38, in open_brower
+    driver = webdriver.Chrome()
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 76, in __init__
+    RemoteWebDriver.__init__(
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot find Chrome binary
+
+
+INFO 2020-05-28 00:48:13,926  log.py[line:28] 初始化函数结尾
+INFO 2020-05-28 00:48:50,683  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:48:50,684  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:48:50,684  log.py[line:28] 使用chrome浏览器
+INFO 2020-05-28 00:48:50,684  log.py[line:28] 选择谷歌浏览器
+INFO 2020-05-28 00:48:52,259  log.py[line:28] 初始化浏览器失败，原因：Message: unknown error: cannot find Chrome binary
+
+INFO 2020-05-28 00:48:52,264  log.py[line:28] Traceback (most recent call last):
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 38, in open_brower
+    driver = webdriver.Chrome()
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 76, in __init__
+    RemoteWebDriver.__init__(
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot find Chrome binary
+
+
+INFO 2020-05-28 00:49:25,811  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:49:25,811  log.py[line:28] 调用浏览器
+INFO 2020-05-28 00:49:25,811  log.py[line:28] 使用chrome浏览器
+INFO 2020-05-28 00:49:25,811  log.py[line:28] 选择谷歌浏览器
+INFO 2020-05-28 00:49:25,815  log.py[line:28] 初始化浏览器失败，原因：[WinError 87] 参数错误。
+INFO 2020-05-28 00:49:25,817  log.py[line:28] Traceback (most recent call last):
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 38, in open_brower
+    driver = webdriver.Chrome('')
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
+    self.service.start()
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 854, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 1307, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+OSError: [WinError 87] 参数错误。
+
+INFO 2020-05-28 00:49:25,817  log.py[line:28] 初始化函数结尾
+INFO 2020-05-28 01:00:24,424  log.py[line:28] 调用浏览器
+INFO 2020-05-28 01:00:24,425  log.py[line:28] 调用浏览器
+INFO 2020-05-28 01:00:24,425  log.py[line:28] 使用chrome浏览器
+INFO 2020-05-28 01:00:24,425  log.py[line:28] 选择谷歌浏览器
+INFO 2020-05-28 01:00:26,392  log.py[line:28] 倒计时结束
+INFO 2020-05-28 01:00:26,393  log.py[line:28] 初始化函数结尾
