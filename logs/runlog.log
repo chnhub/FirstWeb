@@ -1,0 +1,357 @@
+INFO 2020-05-29 00:53:38,713  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 00:53:38,713  log.py[line:34] 调用浏览器
+INFO 2020-05-29 00:53:38,714  log.py[line:34] 使用chrome浏览器
+INFO 2020-05-29 00:53:38,714  log.py[line:34] 初始化浏览器失败，原因：No section: 'webdriver'
+INFO 2020-05-29 00:53:38,716  log.py[line:34] Traceback (most recent call last):
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 35, in open_brower
+    path_driver = ConfigParser().get("webdriver", 'borwer_webdriverpath')
+  File "E:\Program Files\Python\Python38\lib\configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "E:\Program Files\Python\Python38\lib\configparser.py", line 1149, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'webdriver'
+
+INFO 2020-05-29 00:53:38,717  log.py[line:34] 初始化函数结尾
+INFO 2020-05-29 00:56:45,916  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 00:56:45,917  log.py[line:34] 调用浏览器
+INFO 2020-05-29 00:56:45,917  log.py[line:34] 使用chrome浏览器
+ERROR 2020-05-29 00:56:45,917  log.py[line:42] '../config/config.conf'路径下找不到配置文件
+INFO 2020-05-29 00:56:45,918  log.py[line:34] 选择谷歌浏览器
+INFO 2020-05-29 00:56:45,922  log.py[line:34] 初始化浏览器失败，原因：expected str, bytes or os.PathLike object, not NoneType
+INFO 2020-05-29 00:56:45,924  log.py[line:34] Traceback (most recent call last):
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 38, in open_brower
+    self.driver = webdriver.Chrome(path_driver)
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
+    self.service.start()
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 854, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 1247, in _execute_child
+    args = list2cmdline(args)
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 549, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+  File "E:\Program Files\Python\Python38\lib\os.py", line 818, in fsdecode
+    filename = fspath(filename)  # Does type-checking of `filename`.
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+
+INFO 2020-05-29 00:56:45,925  log.py[line:34] 初始化函数结尾
+INFO 2020-05-29 00:56:56,940  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 00:56:56,940  log.py[line:34] 调用浏览器
+INFO 2020-05-29 00:56:56,940  log.py[line:34] 使用chrome浏览器
+ERROR 2020-05-29 00:56:56,941  log.py[line:42] '../config/config.conf'路径下找不到配置文件
+INFO 2020-05-29 00:56:56,941  log.py[line:34] 选择谷歌浏览器
+INFO 2020-05-29 00:56:56,945  log.py[line:34] 初始化浏览器失败，原因：expected str, bytes or os.PathLike object, not NoneType
+INFO 2020-05-29 00:56:56,947  log.py[line:34] Traceback (most recent call last):
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 38, in open_brower
+    self.driver = webdriver.Chrome(path_driver)
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
+    self.service.start()
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 854, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 1247, in _execute_child
+    args = list2cmdline(args)
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 549, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+  File "E:\Program Files\Python\Python38\lib\os.py", line 818, in fsdecode
+    filename = fspath(filename)  # Does type-checking of `filename`.
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+
+INFO 2020-05-29 00:56:56,947  log.py[line:34] 初始化函数结尾
+INFO 2020-05-29 00:57:42,733  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 00:57:42,734  log.py[line:34] 调用浏览器
+INFO 2020-05-29 00:57:42,734  log.py[line:34] 使用chrome浏览器
+ERROR 2020-05-29 00:57:42,734  log.py[line:42] '../config/config.conf'路径下找不到配置文件
+INFO 2020-05-29 00:57:42,735  log.py[line:34] 选择谷歌浏览器
+INFO 2020-05-29 00:57:42,739  log.py[line:34] 初始化浏览器失败，原因：expected str, bytes or os.PathLike object, not NoneType
+INFO 2020-05-29 00:57:42,740  log.py[line:34] Traceback (most recent call last):
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 38, in open_brower
+    self.driver = webdriver.Chrome(path_driver)
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
+    self.service.start()
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 854, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 1247, in _execute_child
+    args = list2cmdline(args)
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 549, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+  File "E:\Program Files\Python\Python38\lib\os.py", line 818, in fsdecode
+    filename = fspath(filename)  # Does type-checking of `filename`.
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+
+INFO 2020-05-29 00:57:42,741  log.py[line:34] 初始化函数结尾
+INFO 2020-05-29 00:57:48,683  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 00:57:48,684  log.py[line:34] 调用浏览器
+INFO 2020-05-29 00:57:48,684  log.py[line:34] 使用chrome浏览器
+ERROR 2020-05-29 00:58:10,499  log.py[line:42] '../config/config.conf'路径下找不到配置文件
+INFO 2020-05-29 01:00:25,905  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 01:00:25,906  log.py[line:34] 调用浏览器
+INFO 2020-05-29 01:00:25,906  log.py[line:34] 使用chrome浏览器
+ERROR 2020-05-29 01:00:25,907  log.py[line:42] '../config/config.conf'路径下找不到配置文件
+INFO 2020-05-29 01:00:25,907  log.py[line:34] 选择谷歌浏览器
+INFO 2020-05-29 01:00:25,911  log.py[line:34] 初始化浏览器失败，原因：expected str, bytes or os.PathLike object, not NoneType
+INFO 2020-05-29 01:00:25,913  log.py[line:34] Traceback (most recent call last):
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 38, in open_brower
+    self.driver = webdriver.Chrome(path_driver)
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
+    self.service.start()
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 854, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 1247, in _execute_child
+    args = list2cmdline(args)
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 549, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+  File "E:\Program Files\Python\Python38\lib\os.py", line 818, in fsdecode
+    filename = fspath(filename)  # Does type-checking of `filename`.
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+
+INFO 2020-05-29 01:00:25,913  log.py[line:34] 初始化函数结尾
+INFO 2020-05-29 01:00:46,818  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 01:00:46,818  log.py[line:34] 调用浏览器
+INFO 2020-05-29 01:00:46,818  log.py[line:34] 使用chrome浏览器
+ERROR 2020-05-29 01:00:46,818  log.py[line:42] '../config/config.conf'路径下找不到配置文件
+INFO 2020-05-29 01:00:46,819  log.py[line:34] 选择谷歌浏览器
+INFO 2020-05-29 01:00:46,823  log.py[line:34] 初始化浏览器失败，原因：expected str, bytes or os.PathLike object, not NoneType
+INFO 2020-05-29 01:00:46,824  log.py[line:34] Traceback (most recent call last):
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 38, in open_brower
+    self.driver = webdriver.Chrome(path_driver)
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
+    self.service.start()
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 854, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 1247, in _execute_child
+    args = list2cmdline(args)
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 549, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+  File "E:\Program Files\Python\Python38\lib\os.py", line 818, in fsdecode
+    filename = fspath(filename)  # Does type-checking of `filename`.
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+
+INFO 2020-05-29 01:00:46,825  log.py[line:34] 初始化函数结尾
+INFO 2020-05-29 01:01:34,411  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 01:01:34,412  log.py[line:34] 调用浏览器
+INFO 2020-05-29 01:01:34,412  log.py[line:34] 使用chrome浏览器
+ERROR 2020-05-29 01:01:34,412  log.py[line:42] '/config/config.conf'路径下找不到配置文件
+INFO 2020-05-29 01:01:34,412  log.py[line:34] 选择谷歌浏览器
+INFO 2020-05-29 01:01:34,416  log.py[line:34] 初始化浏览器失败，原因：expected str, bytes or os.PathLike object, not NoneType
+INFO 2020-05-29 01:01:34,418  log.py[line:34] Traceback (most recent call last):
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 38, in open_brower
+    self.driver = webdriver.Chrome(path_driver)
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
+    self.service.start()
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 854, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 1247, in _execute_child
+    args = list2cmdline(args)
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 549, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+  File "E:\Program Files\Python\Python38\lib\os.py", line 818, in fsdecode
+    filename = fspath(filename)  # Does type-checking of `filename`.
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+
+INFO 2020-05-29 01:01:34,419  log.py[line:34] 初始化函数结尾
+INFO 2020-05-29 01:02:05,623  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 01:02:05,624  log.py[line:34] 调用浏览器
+INFO 2020-05-29 01:02:05,625  log.py[line:34] 使用chrome浏览器
+INFO 2020-05-29 01:02:05,626  log.py[line:34] 初始化浏览器失败，原因：has_section() takes 2 positional arguments but 3 were given
+INFO 2020-05-29 01:02:05,626  log.py[line:34] Traceback (most recent call last):
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 35, in open_brower
+    path_driver = self.get_config('config/config.conf', 'webdriver', 'borwer_webdriverpath')
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 83, in get_config
+    if config.has_section(sections, keys):
+TypeError: has_section() takes 2 positional arguments but 3 were given
+
+INFO 2020-05-29 01:02:05,627  log.py[line:34] 初始化函数结尾
+INFO 2020-05-29 01:02:10,380  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 01:02:10,380  log.py[line:34] 调用浏览器
+INFO 2020-05-29 01:02:10,380  log.py[line:34] 使用chrome浏览器
+INFO 2020-05-29 01:02:10,381  log.py[line:34] 初始化浏览器失败，原因：has_section() takes 2 positional arguments but 3 were given
+INFO 2020-05-29 01:02:10,381  log.py[line:34] Traceback (most recent call last):
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 35, in open_brower
+    path_driver = self.get_config('config/config.conf', 'webdriver', 'borwer_webdriverpath')
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 83, in get_config
+    if config.has_section(sections, keys):
+TypeError: has_section() takes 2 positional arguments but 3 were given
+
+INFO 2020-05-29 01:02:10,382  log.py[line:34] 初始化函数结尾
+INFO 2020-05-29 01:05:05,418  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 01:05:05,418  log.py[line:34] 调用浏览器
+INFO 2020-05-29 01:05:05,419  log.py[line:34] 使用chrome浏览器
+INFO 2020-05-29 01:05:05,419  log.py[line:34] 选择谷歌浏览器
+INFO 2020-05-29 01:05:05,423  log.py[line:34] 初始化浏览器失败，原因：Message: 'chromedriver'' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+INFO 2020-05-29 01:05:05,425  log.py[line:34] Traceback (most recent call last):
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 854, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 1307, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] 系统找不到指定的文件。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 38, in open_brower
+    self.driver = webdriver.Chrome(path_driver)
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
+    self.service.start()
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver'' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+INFO 2020-05-29 01:05:05,426  log.py[line:34] 初始化函数结尾
+INFO 2020-05-29 01:05:16,418  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 01:05:16,418  log.py[line:34] 调用浏览器
+INFO 2020-05-29 01:05:16,418  log.py[line:34] 使用chrome浏览器
+INFO 2020-05-29 01:05:16,419  log.py[line:34] 选择谷歌浏览器
+INFO 2020-05-29 01:05:16,423  log.py[line:34] 初始化浏览器失败，原因：Message: 'chromedriver'' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+INFO 2020-05-29 01:05:16,425  log.py[line:34] Traceback (most recent call last):
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 854, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 1307, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] 系统找不到指定的文件。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 38, in open_brower
+    self.driver = webdriver.Chrome(path_driver)
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
+    self.service.start()
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver'' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+INFO 2020-05-29 01:05:16,425  log.py[line:34] 初始化函数结尾
+INFO 2020-05-29 01:05:58,276  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 01:05:58,277  log.py[line:34] 调用浏览器
+INFO 2020-05-29 01:05:58,278  log.py[line:34] 使用chrome浏览器
+INFO 2020-05-29 01:06:25,440  log.py[line:34] 选择谷歌浏览器
+INFO 2020-05-29 01:07:38,178  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 01:07:38,179  log.py[line:34] 调用浏览器
+INFO 2020-05-29 01:07:38,179  log.py[line:34] 使用chrome浏览器
+INFO 2020-05-29 01:07:38,180  log.py[line:34] 选择谷歌浏览器
+INFO 2020-05-29 01:07:38,184  log.py[line:34] 初始化浏览器失败，原因：Message: 'chromedriver'' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+INFO 2020-05-29 01:07:38,186  log.py[line:34] Traceback (most recent call last):
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 854, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 1307, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] 系统找不到指定的文件。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 38, in open_brower
+    self.driver = webdriver.Chrome(path_driver)
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
+    self.service.start()
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver'' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+INFO 2020-05-29 01:07:38,187  log.py[line:34] 初始化函数结尾
+INFO 2020-05-29 01:08:42,459  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 01:08:42,459  log.py[line:34] 调用浏览器
+INFO 2020-05-29 01:08:42,459  log.py[line:34] 使用chrome浏览器
+INFO 2020-05-29 01:08:42,460  log.py[line:34] 选择谷歌浏览器
+INFO 2020-05-29 01:08:44,408  log.py[line:34] 倒计时结束
+INFO 2020-05-29 01:08:44,408  log.py[line:34] 初始化函数结尾
+INFO 2020-05-29 01:09:40,072  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 01:09:40,073  log.py[line:34] 调用浏览器
+INFO 2020-05-29 01:09:40,073  log.py[line:34] 使用chrome浏览器
+INFO 2020-05-29 01:09:40,073  log.py[line:34] 选择谷歌浏览器
+INFO 2020-05-29 01:09:40,077  log.py[line:34] 初始化浏览器失败，原因：Message: 'chromedriver'' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+INFO 2020-05-29 01:09:40,079  log.py[line:34] Traceback (most recent call last):
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 854, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 1307, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] 系统找不到指定的文件。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 38, in open_brower
+    self.driver = webdriver.Chrome(path_driver)
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
+    self.service.start()
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver'' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+INFO 2020-05-29 01:09:40,080  log.py[line:34] 初始化函数结尾
+INFO 2020-05-29 01:09:46,647  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 01:09:46,648  log.py[line:34] 调用浏览器
+INFO 2020-05-29 01:09:46,648  log.py[line:34] 使用chrome浏览器
+INFO 2020-05-29 01:09:46,648  log.py[line:34] 选择谷歌浏览器
+INFO 2020-05-29 01:09:46,653  log.py[line:34] 初始化浏览器失败，原因：Message: 'chromedriver'' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+INFO 2020-05-29 01:09:46,655  log.py[line:34] Traceback (most recent call last):
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 854, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 1307, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] 系统找不到指定的文件。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 38, in open_brower
+    self.driver = webdriver.Chrome(path_driver)
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
+    self.service.start()
+  File "E:\Program Files\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver'' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+INFO 2020-05-29 01:09:46,655  log.py[line:34] 初始化函数结尾
+INFO 2020-05-29 01:09:55,481  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 01:09:55,482  log.py[line:34] 调用浏览器
+INFO 2020-05-29 01:09:55,483  log.py[line:34] 使用chrome浏览器
+INFO 2020-05-29 01:10:54,251  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 01:10:54,252  log.py[line:34] 调用浏览器
+INFO 2020-05-29 01:10:54,252  log.py[line:34] 使用chrome浏览器
+INFO 2020-05-29 01:11:16,846  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 01:11:16,847  log.py[line:34] 调用浏览器
+INFO 2020-05-29 01:11:16,847  log.py[line:34] 使用chrome浏览器
+INFO 2020-05-29 01:12:31,235  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 01:12:31,236  log.py[line:34] 调用浏览器
+INFO 2020-05-29 01:12:31,236  log.py[line:34] 使用chrome浏览器
+INFO 2020-05-29 01:15:24,723  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 01:15:24,724  log.py[line:34] 调用浏览器
+INFO 2020-05-29 01:15:24,724  log.py[line:34] 使用chrome浏览器
+INFO 2020-05-29 01:15:29,986  log.py[line:34] 浏览器构造方法
+INFO 2020-05-29 01:15:29,987  log.py[line:34] 调用浏览器
+INFO 2020-05-29 01:15:29,987  log.py[line:34] 使用chrome浏览器
+INFO 2020-05-29 01:15:29,988  log.py[line:34] 选择谷歌浏览器
+INFO 2020-05-29 01:15:31,972  log.py[line:34] 倒计时结束
+INFO 2020-05-29 01:15:31,972  log.py[line:34] 初始化函数结尾

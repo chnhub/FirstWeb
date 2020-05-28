@@ -1,6 +1,7 @@
-from common.log import logInfo
+from common.log import logInfo,logError
 from selenium import webdriver
-import traceback
+from configparser import ConfigParser
+import traceback, os
 
 class BasePage(object):
 
@@ -30,12 +31,13 @@ class BasePage(object):
         else:
             brower_type = '1'
 
-        path_driver = 'E:/Program/ChromeMaYi/guge/chromedriver'
         try:
+            path_driver = self.get_config('config/config.conf', 'webdriver', 'borwer_webdriverpath')
             if brower_type == '1':
                 logInfo('选择谷歌浏览器')
-                driver = webdriver.Chrome(path_driver)
-                driver.get('http://www.baidu.com')
+                self.driver = webdriver.Chrome(path_driver)
+                #self.driver = webdriver.Chrome('E:/Program/ChromeMaYi/guge/chromedriver')
+                self.driver.get('http://www.baidu.com')
                 #time.sleep(10)
                 logInfo('倒计时结束')
             elif brower_type == '2':
@@ -61,3 +63,28 @@ class BasePage(object):
 
     def quit(self):
         pass
+    
+    def get_config(self, confpath, sections, keys):
+        '''
+            直接获取配置文件中的值。
+
+            parameters：
+
+                path     -> 配置文件路径
+                sections -> 配置文件中的节点
+                keys     -> 节点下的键
+
+            return：keys对应的value。
+        '''
+        config = ConfigParser()
+        conf_value = None
+        if os.path.isfile(confpath):
+            config.read(confpath, 'utf-8') # 捕获异常或判断文件是否存在
+            value_config = ''
+            if config.has_option(sections, keys):
+                conf_value = config.get(sections, keys)
+            else:
+                logError(f'\'{confpath}\'路径配置文件下，找不到键{keys}')
+        else:
+            logError(f'\'{confpath}\'路径下找不到配置文件')
+        return conf_value

@@ -4,3 +4,4 @@ if __name__ == "__main__":
     page = BasePage()
     page.open_brower()
     
+# pip freeze --all > requirements.txt

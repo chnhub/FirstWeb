@@ -12,20 +12,36 @@ logger = logging.getLogger()
 #handler:设定了日志输出行的格式
 #handler:以及设定写日志到文件（是否回滚）？还是到屏幕
 #handler：还定了打印日志的级别。
-
+'''
+log打印级别：
+    CRITICAL = 50
+    FATAL = CRITICAL
+    ERROR = 40
+    WARNING = 30
+    WARN = WARNING
+    INFO = 20
+    DEBUG = 10
+    NOTSET = 0
+'''
 
 def logDebug(message):
         # 打印debug级别的日志方法
     print('debug')
     logger.debug(message)
 
-def logWrning(message):
-    # 打印warning级别的日志方法
-    logger.warning(message)
-
 def logInfo(message):
     # 打印info级别的日志方法
     logger.info(message)
+    
+def logWrning(message):
+    # 打印warning级别的日志方法
+    logger.warning(message)
+    
+def logError(message):
+    # 打印info级别的日志方法
+    logger.error(message)
+    
+
 
 if __name__=="__main__":
     logDebug("hi")
