@@ -1,4 +1,4 @@
-from common.basepage import *
+from common.basepage import BasePage
 if __name__ == "__main__":
     print('hello world')
     page = BasePage()

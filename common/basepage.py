@@ -1,12 +1,11 @@
-from common.log import *
+from common.log import logInfo
 from selenium import webdriver
 import traceback
 
 class BasePage(object):
 
     def __init__(self):
-        print('初始化')
-        logInfo('调用浏览器')
+        logInfo('浏览器构造方法')
     
     def open_brower(self, brower_type = 'chrome'):
         '''
