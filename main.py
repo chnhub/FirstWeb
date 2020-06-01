@@ -2,6 +2,7 @@ from common.basepage import BasePage
 from configparser import ConfigParser
 from pageobjects.login_page import LoginPage
 from time import sleep
+from PIL import Image, ImageEnhance
 
 def test1():
     page = BasePage()
@@ -27,9 +28,29 @@ def test3():
     sleep(100)
   
 
+
+def get_pictures():
+    
+    img = Image.open('logs/img2.png')
+    img = img.convert("RGB")
+    enhancer = ImageEnhance.Color(img)
+    enhancer = enhancer.enhance(0)
+    enhancer = ImageEnhance.Brightness(enhancer)
+    enhancer = enhancer.enhance(2)
+    enhancer = ImageEnhance.Contrast(enhancer)
+    enhancer = enhancer.enhance(8)
+    enhancer = ImageEnhance.Sharpness(enhancer)
+    img = enhancer.enhance(20)
+    img.show()
+
+
+
+
+
+
 if __name__ == "__main__":
     print('hello world')
     test3()
-   
+    #get_pictures()
 # pip freeze --all > requirements.txt
 # pip install -r requirements.txt

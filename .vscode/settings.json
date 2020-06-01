@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "e:\\Workspaces\\Python\\FirstWeb\\env\\Scripts\\python.exe",
+    "python.pythonPath": "env\\Scripts\\python.exe",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true
 }

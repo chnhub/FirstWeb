@@ -2,7 +2,7 @@ from pagelocators.login_page_locator import LoginPageLocator as loc
 from common.basepage import BasePage
 import pytesseract
 import re
-from PIL import Image  # 用于打开图片和对图片处理
+from PIL import Image, ImageEnhance  # 用于打开图片和对图片处理
 
 # 一个用例，一次浏览器的打开和结束。
 class LoginPage(BasePage):
@@ -16,7 +16,8 @@ class LoginPage(BasePage):
         #self.click_element(loc.login_button_loc,"登陆页面_点击登陆按钮")
         #print (self.get_element_attribute(loc.verimg_loc, 'src' , '登录页面验证码'))
         #self.request_download(self.get_element_attribute(loc.verimg_loc, 'src' , '登录页面验证码'))
-        self.image_str()
+        print('验证码为'+self.get_pic(self.get_pictures()))
+        print('验证码2为'+self.image_str())
     '''
     # //div[@class="form-error-info"]
     # 获取表单区域的错误信息
@@ -37,6 +38,10 @@ class LoginPage(BasePage):
 
        
     def get_pictures(self):
+        '''
+            截取图片
+        '''
+        self._driver.maximize_window()
         self._driver.save_screenshot('logs/pictures.png')
         page_snap_obj = Image.open('logs/pictures.png')
 
@@ -48,23 +53,28 @@ class LoginPage(BasePage):
         right = left + size['width']
         bottom = top + size['height']
         image_obj = page_snap_obj.crop((left, top, right, bottom))  # 按照验证码的长宽，切割验证码
-        # image_obj.show() 
+        #image_obj.show() 
+        image_obj.save('logs/img2.png')
         return image_obj
 
     def processing_image(self):
         image_obj = self.get_pictures()  # 获取验证码
+        #img = image_obj.convert("L")  # 转灰度
         img = image_obj.convert("L")  # 转灰度
 
         pixdata = img.load()
         w, h = img.size
-        threshold = 160
+        threshold = 170
+
         # 遍历所有像素，大于阈值的为黑色
+        
         for y in range(h):
             for x in range(w):
                 if pixdata[x, y] < threshold:
                     pixdata[x, y] = 0
                 else:
                     pixdata[x, y] = 255
+        
         #img.show()
         return img
 
@@ -73,6 +83,7 @@ class LoginPage(BasePage):
         data = images.getdata()
         w, h = images.size
         black_point = 0
+        
         for x in range(1, w - 1):
             for y in range(1, h - 1):
                 mid_pixel = data[w * y + x]  # 中央像素点像素值
@@ -93,16 +104,35 @@ class LoginPage(BasePage):
                     if black_point < 1:
                         images.putpixel((x, y), 255)
                     black_point = 0
-        # images.show()
+        
+
+        images.show()
         return images
 
     def image_str(self):
         image = self.delete_spot()
-        #pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"  # 设置pyteseract路径
+        pytesseract.pytesseract.tesseract_cmd = "E:\\Program\\Tesseract-OCR\\tesseract.exe"  # 设置pyteseract路径
         result = pytesseract.image_to_string(image)  # 图片转文字
+        print('未处理前验证码：'+ result)
         resultj = re.sub(u"([^\u4e00-\u9fa5\u0030-\u0039\u0041-\u005a\u0061-\u007a])", "", result)  # 去除识别出来的特殊字符
         result_four = resultj[0:4]  # 只获取前4个字符
-        # print(resultj)  # 打印识别的验证码
+        print('验证码为：' + resultj)  # 打印识别的验证码
         return result_four
 
- 
+    def get_pic(self, img):
+        pytesseract.pytesseract.tesseract_cmd = "E:\\Program\\Tesseract-OCR\\tesseract.exe"  # 设置pyteseract路径
+
+        img = img.convert("RGB")
+        enhancer = ImageEnhance.Color(img)
+        enhancer = enhancer.enhance(0)
+        enhancer = ImageEnhance.Brightness(enhancer)
+        enhancer = enhancer.enhance(2)
+        enhancer = ImageEnhance.Contrast(enhancer)
+        enhancer = enhancer.enhance(8)
+        enhancer = ImageEnhance.Sharpness(enhancer)
+        img = enhancer.enhance(20)
+        img.show()
+        text = pytesseract.image_to_string(img)
+        text = re.sub(u"([^\u4e00-\u9fa5\u0030-\u0039\u0041-\u005a\u0061-\u007a])", "", text)  # 去除识别出来的特殊字符
+
+        return text
