@@ -9,7 +9,7 @@ class BasePage(object):
 
     def __init__(self, brower_type = 'chrome'):
         logInfo('浏览器构造方法')
-        self.__driver = None
+        self._driver = None
 
         if brower_type.isspace() != True and len(brower_type) !=0 :
             self.open_brower(brower_type)
@@ -50,11 +50,11 @@ class BasePage(object):
             if brower_type == '1':
                 logInfo('初始化谷歌浏览器')
                 if borwer_path and driver_path:
-                    self.__driver = webdriver.Chrome(executable_path = borwer_path, options = options)
+                    self._driver = webdriver.Chrome(executable_path = borwer_path, options = options)
                 elif driver_path:
-                    self.__driver = webdriver.Chrome(executable_path = driver_path)
+                    self._driver = webdriver.Chrome(executable_path = driver_path)
                 else:
-                    self.__driver = webdriver.Chrome()
+                    self._driver = webdriver.Chrome()
                 self.get_url('http://122.225.207.133:20001')
             elif brower_type == '2':
                 logInfo('初始化火狐浏览器')
@@ -69,9 +69,9 @@ class BasePage(object):
                 # raise Exception(print('se'))
                 raise '浏览器初始化失败，手动抛异常，看上面异常信息。'
         logInfo('初始化函数结尾')
-        return self.__driver       
+        return self._driver       
     def get_webdriver(self):
-        return self.__driver
+        return self._driver
     def get_url(self, url):
         '''
             传入url参数，浏览器打开url链接
@@ -79,7 +79,7 @@ class BasePage(object):
 
         
         try:
-            self.__driver.get(url)
+            self._driver.get(url)
         except Exception as err:
             print('进入异常')
             print(err)
@@ -87,7 +87,7 @@ class BasePage(object):
     def get_element(self, loc, img_doc=''):
         logInfo('查找{}中的元素{}'.format(img_doc,loc))
         try:
-            element = self.__driver.find_element(*loc)
+            element = self._driver.find_element(*loc)
             return element
         except:
             # 日志
@@ -151,7 +151,7 @@ class BasePage(object):
             logInfo("获取元素 {} 的属性 {} 值为:{}".format(loc, attr_name, attr_value))
             return attr_value        
     def quit(self):
-        self.__driver.quit()
+        self._driver.quit()
     
     def get_config(self, sections, keys, confpath = 'config/config.conf'):
         '''

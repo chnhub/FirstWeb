@@ -32,3 +32,4 @@ if __name__ == "__main__":
     test3()
    
 # pip freeze --all > requirements.txt
+# pip install -r requirements.txt
