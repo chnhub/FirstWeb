@@ -8,9 +8,20 @@ import sys
 class BasePage(object):
 
     def __init__(self, brower_type = 'chrome'):
-        logInfo('浏览器构造方法')
-        self._driver = None
+        '''
+            默认为Chrome浏览器，输错为Chrome浏览器。config配置文件可配置浏览器路径，以及浏览器驱动路径。
 
+            brower_type:
+
+                chrome  -> 谷歌浏览器
+                firefox -> 火狐浏览器
+                ie      -> ie浏览器
+        '''
+        logInfo('浏览器构造方法')
+        #self._webdriver = None
+        self._webdriver = webdriver.Chrome.__new__(webdriver.Chrome)
+        #(self._webdriver).__class__ = webdriver.Chrome
+        # 判断是否初始化为空字符串
         if brower_type.isspace() != True and len(brower_type) !=0 :
             self.open_brower(brower_type)
 
@@ -24,6 +35,7 @@ class BasePage(object):
                 firefox -> 火狐浏览器
                 ie      -> ie浏览器
         '''
+
         logInfo('调用浏览器')
         brower_type = str(brower_type)
         if 'chrome' in brower_type or '谷歌' in brower_type:
@@ -50,12 +62,12 @@ class BasePage(object):
             if brower_type == '1':
                 logInfo('初始化谷歌浏览器')
                 if borwer_path and driver_path:
-                    self._driver = webdriver.Chrome(executable_path = borwer_path, options = options)
+                    self._webdriver = webdriver.Chrome(executable_path = borwer_path, options = options)
                 elif driver_path:
-                    self._driver = webdriver.Chrome(executable_path = driver_path)
+                    self._webdriver = webdriver.Chrome(executable_path = driver_path)
                 else:
-                    self._driver = webdriver.Chrome()
-                self.get_url('http://122.225.207.133:20001')
+                    self._webdriver = webdriver.Chrome()
+                #self.get_url('http://122.225.207.133:20001')
             elif brower_type == '2':
                 logInfo('初始化火狐浏览器')
             elif brower_type == '3':
@@ -69,9 +81,9 @@ class BasePage(object):
                 # raise Exception(print('se'))
                 raise '浏览器初始化失败，手动抛异常，看上面异常信息。'
         logInfo('初始化函数结尾')
-        return self._driver       
+        return self._webdriver       
     def get_webdriver(self):
-        return self._driver
+        return self._webdriver
     def get_url(self, url):
         '''
             传入url参数，浏览器打开url链接
@@ -79,7 +91,7 @@ class BasePage(object):
 
         
         try:
-            self._driver.get(url)
+            self._webdriver.get(url)
         except Exception as err:
             print('进入异常')
             print(err)
@@ -87,7 +99,7 @@ class BasePage(object):
     def get_element(self, loc, img_doc=''):
         logInfo('查找{}中的元素{}'.format(img_doc,loc))
         try:
-            element = self._driver.find_element(*loc)
+            element = self._webdriver.find_element(*loc)
             return element
         except:
             # 日志
@@ -150,8 +162,25 @@ class BasePage(object):
         else:
             logInfo("获取元素 {} 的属性 {} 值为:{}".format(loc, attr_name, attr_value))
             return attr_value        
+    
+    # 查找文本是否存在页面
+    def isin_pagesource(self, text):
+        '''
+            text存在该页面返回Ture，否则返回False。
+        '''
+        a = text
+        b = self._webdriver.page_source 
+        #if text.encode("utf-8") in self._webdriver.page_source :
+        if a in b :
+            return True
+        else:
+            return False
+        
+    def max_window(self):
+        self._webdriver.maximize_window()
+    # 退出浏览器
     def quit(self):
-        self._driver.quit()
+        self._webdriver.quit()
     
     def get_config(self, sections, keys, confpath = 'config/config.conf'):
         '''

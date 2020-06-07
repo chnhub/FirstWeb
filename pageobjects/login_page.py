@@ -16,8 +16,11 @@ class LoginPage(BasePage):
         #self.click_element(loc.login_button_loc,"登陆页面_点击登陆按钮")
         #print (self.get_element_attribute(loc.verimg_loc, 'src' , '登录页面验证码'))
         #self.request_download(self.get_element_attribute(loc.verimg_loc, 'src' , '登录页面验证码'))
-        print('验证码为'+self.get_pic(self.get_pictures()))
-        print('验证码2为'+self.image_str())
+        #print('验证码为'+self.get_pic(self.get_pictures()))
+        #print('验证码2为'+self.image_str())
+    
+    def islogin(self):
+        return self.isin_pagesource('退出')
     '''
     # //div[@class="form-error-info"]
     # 获取表单区域的错误信息
@@ -27,8 +30,8 @@ class LoginPage(BasePage):
     # 获取页面中间的错误信息
     def get_error_msg_from_pageCenter(self):
         return self.get_element_text(loc.error_notify_from_pageCenter,"登陆页面_页面中间错误信息")
-
     '''
+    
     # 传入url保存图片(此方法不行 需要截图
     def request_download(self, IMAGE_URL):
         import requests
@@ -41,8 +44,8 @@ class LoginPage(BasePage):
         '''
             截取图片
         '''
-        self._driver.maximize_window()
-        self._driver.save_screenshot('logs/pictures.png')
+        self._webdriver.maximize_window()
+        self._webdriver.save_screenshot('logs/pictures.png')
         page_snap_obj = Image.open('logs/pictures.png')
 
         element = self.get_element(loc.verimg_loc, '验证码图片')
@@ -56,7 +59,8 @@ class LoginPage(BasePage):
         #image_obj.show() 
         image_obj.save('logs/img2.png')
         return image_obj
-
+    
+    # 图片转黑度 
     def processing_image(self):
         image_obj = self.get_pictures()  # 获取验证码
         #img = image_obj.convert("L")  # 转灰度
@@ -78,6 +82,7 @@ class LoginPage(BasePage):
         #img.show()
         return img
 
+    # 删除噪点
     def delete_spot(self):
         images = self.processing_image()
         data = images.getdata()
@@ -109,6 +114,7 @@ class LoginPage(BasePage):
         images.show()
         return images
 
+    # 对比照片（正确率太低，后期加入训练照片）
     def image_str(self):
         image = self.delete_spot()
         pytesseract.pytesseract.tesseract_cmd = "E:\\Program\\Tesseract-OCR\\tesseract.exe"  # 设置pyteseract路径

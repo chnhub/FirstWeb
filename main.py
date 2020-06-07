@@ -3,6 +3,8 @@ from configparser import ConfigParser
 from pageobjects.login_page import LoginPage
 from time import sleep
 from PIL import Image, ImageEnhance
+from test_case import test_login
+import unittest
 
 def test1():
     page = BasePage()
@@ -27,8 +29,6 @@ def test3():
     LoginPage().login('Admin', '123456', '0241')
     sleep(100)
   
-
-
 def get_pictures():
     
     img = Image.open('logs/img2.png')
@@ -43,14 +43,21 @@ def get_pictures():
     img = enhancer.enhance(20)
     img.show()
 
-
+# 使用unittest
+def first_unittest():
+    suit = unittest.TestSuite() # 测试套件
+    loader = unittest.TestLoader() # 用例加载器
+    test_module = loader.loadTestsFromModule(test_login) # 加载测试类
+    suit.addTest(test_module) # 测试类添加到测试套件中
+    runner = unittest.TextTestRunner() # 用例运行器
+    runner.run(suit) # 运行
 
 
 
 
 if __name__ == "__main__":
     print('hello world')
-    test3()
+    first_unittest()
     #get_pictures()
 # pip freeze --all > requirements.txt
 # pip install -r requirements.txt

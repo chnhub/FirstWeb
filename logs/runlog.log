@@ -1,1312 +1,644 @@
-INFO 2020-05-30 01:05:30,267  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:05:30,268  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:06:52,603  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:06:52,604  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:07:21,776  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:07:21,776  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:08:17,556  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:08:17,556  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:08:53,208  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:08:53,209  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:09:33,815  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:09:33,815  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:13:23,530  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:13:23,530  log.py[line:34] 调用浏览器
-ERROR 2020-05-30 01:13:23,530  log.py[line:42] 'config/config.conf'配置文件异常:
- Source contains parsing errors: 'config/config.conf'
-	[line  3]: 'borwer_webdriverpath1 \n'
-INFO 2020-05-30 01:14:19,443  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:14:19,443  log.py[line:34] 调用浏览器
-ERROR 2020-05-30 01:14:19,444  log.py[line:42] 'config/config.conf'配置文件异常:
- Source contains parsing errors: 'config/config.conf'
-	[line  3]: 'borwer_webdriverpath1 \n'
-ERROR 2020-05-30 01:14:19,445  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 89, in get_config
-    config.read(confpath, 'utf-8') # 捕获异常或判断文件是否存在
-  File "E:\Program Files\Python\Python38\lib\configparser.py", line 697, in read
-    self._read(fp, filename)
-  File "E:\Program Files\Python\Python38\lib\configparser.py", line 1113, in _read
-    raise e
-configparser.ParsingError: Source contains parsing errors: 'config/config.conf'
-	[line  3]: 'borwer_webdriverpath1 \n'
-
-INFO 2020-05-30 01:16:50,667  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:16:50,668  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:18:11,605  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:18:11,606  log.py[line:34] 调用浏览器
-ERROR 2020-05-30 01:18:11,606  log.py[line:42] 'config/config.conf'路径配置文件下，找不到键'borwer_webdriverpath'
-INFO 2020-05-30 01:18:11,606  log.py[line:34] 选择谷歌浏览器
-ERROR 2020-05-30 01:18:11,608  log.py[line:42] 初始化浏览器失败，原因：expected str, bytes or os.PathLike object, not NoneType
-ERROR 2020-05-30 01:18:11,610  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 42, in open_brower
-    self.driver = webdriver.Chrome(path_driver)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
-    self.service.start()
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
-    self.process = subprocess.Popen(cmd, env=self.env,
-  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 854, in __init__
-    self._execute_child(args, executable, preexec_fn, close_fds,
-  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 1247, in _execute_child
-    args = list2cmdline(args)
-  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 549, in list2cmdline
-    for arg in map(os.fsdecode, seq):
-  File "E:\Program Files\Python\Python38\lib\os.py", line 818, in fsdecode
-    filename = fspath(filename)  # Does type-checking of `filename`.
-TypeError: expected str, bytes or os.PathLike object, not NoneType
-
-INFO 2020-05-30 01:25:07,998  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:25:07,998  log.py[line:34] 调用浏览器
-ERROR 2020-05-30 01:25:07,999  log.py[line:42] 'config/config.conf'路径配置文件下，找不到键'borwer_webdriverpath'
-INFO 2020-05-30 01:25:07,999  log.py[line:34] 选择谷歌浏览器
-ERROR 2020-05-30 01:25:08,001  log.py[line:42] 初始化浏览器失败，原因：expected str, bytes or os.PathLike object, not NoneType
-ERROR 2020-05-30 01:25:08,003  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 42, in open_brower
-    self.driver = webdriver.Chrome(path_driver)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
-    self.service.start()
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
-    self.process = subprocess.Popen(cmd, env=self.env,
-  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 854, in __init__
-    self._execute_child(args, executable, preexec_fn, close_fds,
-  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 1247, in _execute_child
-    args = list2cmdline(args)
-  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 549, in list2cmdline
-    for arg in map(os.fsdecode, seq):
-  File "E:\Program Files\Python\Python38\lib\os.py", line 818, in fsdecode
-    filename = fspath(filename)  # Does type-checking of `filename`.
-TypeError: expected str, bytes or os.PathLike object, not NoneType
-
-INFO 2020-05-30 01:25:42,094  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:25:42,094  log.py[line:34] 调用浏览器
-ERROR 2020-05-30 01:25:42,095  log.py[line:42] 'config/config.conf'路径配置文件下，找不到键'borwer_webdriverpath'
-INFO 2020-05-30 01:26:03,226  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:26:03,227  log.py[line:34] 调用浏览器
-ERROR 2020-05-30 01:26:03,227  log.py[line:42] 'config/config.conf'路径配置文件下，找不到键'borwer_webdriverpath'
-ERROR 2020-05-30 01:26:03,228  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 94, in get_config
-    raise ConfigException(f'\'{confpath}\'路径配置文件下，找不到键\'{keys}\'')
-common.basepage.ConfigException: 'config/config.conf'路径配置文件下，找不到键'borwer_webdriverpath'
-
-INFO 2020-05-30 01:28:13,580  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:28:13,580  log.py[line:34] 调用浏览器
-ERROR 2020-05-30 01:28:13,581  log.py[line:42] 找不到'config/config.conf'路径下的配置文件中的键'borwer_webdriverpath'
-ERROR 2020-05-30 01:28:13,581  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 94, in get_config
-    raise ConfigException(f'找不到\'{confpath}\'路径下的配置文件中的键\'{keys}\'')
-common.basepage.ConfigException: 找不到'config/config.conf'路径下的配置文件中的键'borwer_webdriverpath'
-
-INFO 2020-05-30 01:28:35,683  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:28:35,684  log.py[line:34] 调用浏览器
-ERROR 2020-05-30 01:28:35,685  log.py[line:42] 'config/config.conf'路径下没有该配置文件
-ERROR 2020-05-30 01:28:35,686  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 97, in get_config
-    raise ConfigException(f'\'{confpath}\'路径下没有该配置文件')
-common.basepage.ConfigException: 'config/config.conf'路径下没有该配置文件
-
-INFO 2020-05-30 01:30:43,753  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:30:43,754  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:30:43,754  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-30 01:30:46,689  log.py[line:34] 倒计时结束
-INFO 2020-05-30 01:30:46,689  log.py[line:34] 初始化函数结尾
-INFO 2020-05-30 01:30:46,690  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:30:46,690  log.py[line:34] 使用chrome浏览器
-INFO 2020-05-30 01:30:46,691  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-30 01:30:50,901  log.py[line:34] 倒计时结束
-INFO 2020-05-30 01:30:50,902  log.py[line:34] 初始化函数结尾
-INFO 2020-05-30 01:31:24,983  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:31:24,984  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:31:24,986  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-30 01:31:26,522  log.py[line:34] 倒计时结束
-INFO 2020-05-30 01:31:26,522  log.py[line:34] 初始化函数结尾
-INFO 2020-05-30 01:31:26,523  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:31:26,523  log.py[line:34] 使用chrome浏览器
-INFO 2020-05-30 01:31:26,524  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-30 01:31:28,768  log.py[line:34] 倒计时结束
-INFO 2020-05-30 01:31:28,768  log.py[line:34] 初始化函数结尾
-INFO 2020-05-30 01:31:50,700  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:31:50,700  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:31:50,701  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-30 01:31:52,224  log.py[line:34] 倒计时结束
-INFO 2020-05-30 01:31:52,224  log.py[line:34] 初始化函数结尾
-INFO 2020-05-30 01:31:52,225  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:31:52,225  log.py[line:34] 使用chrome浏览器
-INFO 2020-05-30 01:31:52,226  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-30 01:31:54,394  log.py[line:34] 倒计时结束
-INFO 2020-05-30 01:31:54,394  log.py[line:34] 初始化函数结尾
-INFO 2020-05-30 01:32:23,202  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:32:23,203  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:32:23,203  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-30 01:32:25,263  log.py[line:34] 倒计时结束
-INFO 2020-05-30 01:32:25,264  log.py[line:34] 初始化函数结尾
-INFO 2020-05-30 01:32:25,265  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:32:25,266  log.py[line:34] 使用chrome浏览器
-INFO 2020-05-30 01:32:25,268  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-30 01:32:27,537  log.py[line:34] 倒计时结束
-INFO 2020-05-30 01:32:27,537  log.py[line:34] 初始化函数结尾
-INFO 2020-05-30 01:33:18,816  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:33:18,817  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:33:18,818  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-30 01:33:20,333  log.py[line:34] 初始化函数结尾
-INFO 2020-05-30 01:33:20,334  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:33:20,334  log.py[line:34] 使用chrome浏览器
-INFO 2020-05-30 01:33:20,335  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-30 01:33:22,524  log.py[line:34] 初始化函数结尾
-INFO 2020-05-30 01:33:52,130  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:33:52,130  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:33:52,131  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-30 01:33:53,607  log.py[line:34] 初始化函数结尾
-INFO 2020-05-30 01:33:53,608  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:33:53,608  log.py[line:34] 使用chrome浏览器
-INFO 2020-05-30 01:33:53,609  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-30 01:33:55,153  log.py[line:34] 初始化函数结尾
-INFO 2020-05-30 01:35:29,897  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:35:29,898  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:35:29,898  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-30 01:35:30,996  log.py[line:34] 初始化函数结尾
-INFO 2020-05-30 01:35:30,997  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:35:30,997  log.py[line:34] 使用chrome浏览器
-INFO 2020-05-30 01:35:30,998  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-30 01:35:32,491  log.py[line:34] 初始化函数结尾
-INFO 2020-05-30 01:35:58,391  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:35:58,392  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:35:58,393  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-30 01:35:59,934  log.py[line:34] 初始化函数结尾
-INFO 2020-05-30 01:35:59,934  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:35:59,935  log.py[line:34] 使用chrome浏览器
-INFO 2020-05-30 01:35:59,935  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-30 01:36:01,432  log.py[line:34] 初始化函数结尾
-INFO 2020-05-30 01:39:35,454  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:40:18,816  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:40:18,816  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:40:18,817  log.py[line:34] 使用chrome浏览器
-INFO 2020-05-30 01:40:18,817  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-30 01:40:20,319  log.py[line:34] 初始化函数结尾
-INFO 2020-05-30 01:41:50,271  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 01:41:50,271  log.py[line:34] 调用浏览器
-INFO 2020-05-30 01:41:50,272  log.py[line:34] 使用chrome浏览器
-INFO 2020-05-30 01:41:50,273  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-30 01:41:51,790  log.py[line:34] 初始化函数结尾
-INFO 2020-05-30 23:49:57,900  log.py[line:34] 浏览器构造方法
-INFO 2020-05-30 23:49:57,901  log.py[line:34] 调用浏览器
-INFO 2020-05-30 23:49:57,902  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-30 23:50:00,100  log.py[line:34] 初始化函数结尾
-INFO 2020-05-31 00:39:24,323  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 00:39:24,324  log.py[line:34] 调用浏览器
-INFO 2020-05-31 00:39:24,324  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-31 00:39:26,627  log.py[line:34] 初始化函数结尾
-INFO 2020-05-31 01:07:38,245  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 01:07:38,246  log.py[line:34] 调用浏览器
-INFO 2020-05-31 01:07:38,246  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-31 01:07:40,375  log.py[line:34] 初始化函数结尾
-INFO 2020-05-31 02:28:39,509  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:30:06,375  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:30:23,034  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:34:51,276  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:35:21,904  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:38:44,932  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:40:11,906  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:44:07,485  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:46:33,996  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:46:44,804  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:47:06,267  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:47:32,524  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:48:22,771  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:48:38,677  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:50:59,432  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:50:59,433  log.py[line:34] 调用浏览器
-INFO 2020-05-31 02:50:59,433  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-31 02:51:01,589  log.py[line:34] 初始化函数结尾
-INFO 2020-05-31 02:51:25,484  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:51:25,485  log.py[line:34] 调用浏览器
-INFO 2020-05-31 02:51:25,486  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-31 02:51:26,957  log.py[line:34] 初始化函数结尾
-INFO 2020-05-31 02:52:35,863  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:52:35,864  log.py[line:34] 调用浏览器
-INFO 2020-05-31 02:52:35,864  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-31 02:52:37,479  log.py[line:34] 初始化函数结尾
-INFO 2020-05-31 02:55:28,942  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:55:28,942  log.py[line:34] 调用浏览器
-INFO 2020-05-31 02:55:28,943  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-31 02:55:30,436  log.py[line:34] 初始化函数结尾
-INFO 2020-05-31 02:56:29,991  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:56:29,992  log.py[line:34] 调用浏览器
-INFO 2020-05-31 02:56:29,992  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-31 02:56:31,476  log.py[line:34] 初始化函数结尾
-INFO 2020-05-31 02:57:41,090  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 02:57:41,091  log.py[line:34] 调用浏览器
-INFO 2020-05-31 02:57:41,091  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-31 21:05:07,714  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 21:05:07,714  log.py[line:34] 调用浏览器
-INFO 2020-05-31 21:05:07,715  log.py[line:34] 选择谷歌浏览器
-ERROR 2020-05-31 21:05:08,914  log.py[line:42] 初始化浏览器失败，原因：Message: unknown error: cannot find Chrome binary
-
-ERROR 2020-05-31 21:05:08,922  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 42, in open_brower
-    self.__driver = webdriver.Chrome(path_driver)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 76, in __init__
-    RemoteWebDriver.__init__(
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
-    self.error_handler.check_response(response)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: unknown error: cannot find Chrome binary
-
-
-INFO 2020-05-31 21:32:21,276  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 21:32:21,276  log.py[line:34] 调用浏览器
-INFO 2020-05-31 21:32:21,277  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-31 21:32:23,729  log.py[line:34] 初始化函数结尾
-INFO 2020-05-31 21:32:29,731  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 21:32:29,732  log.py[line:34] 调用浏览器
-INFO 2020-05-31 21:32:29,732  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-31 21:32:31,261  log.py[line:34] 初始化函数结尾
-INFO 2020-05-31 21:34:20,865  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 21:34:20,865  log.py[line:34] 调用浏览器
-INFO 2020-05-31 21:34:20,866  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-31 21:34:22,394  log.py[line:34] 初始化函数结尾
-INFO 2020-05-31 21:34:38,116  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 21:34:38,116  log.py[line:34] 调用浏览器
-INFO 2020-05-31 21:34:38,117  log.py[line:34] 选择谷歌浏览器
-ERROR 2020-05-31 21:34:39,662  log.py[line:42] 初始化浏览器失败，原因：Message: unknown error: no chrome binary at E:\\Program\\ChromeMaYi\\guge\\chrome2.exe
-
-ERROR 2020-05-31 21:34:39,671  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 48, in open_brower
-    self.__driver = webdriver.Chrome(executable_path = path_driver, options = options)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 76, in __init__
-    RemoteWebDriver.__init__(
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
-    self.error_handler.check_response(response)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: unknown error: no chrome binary at E:\\Program\\ChromeMaYi\\guge\\chrome2.exe
-
-
-INFO 2020-05-31 21:39:01,223  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 21:39:01,224  log.py[line:34] 调用浏览器
-ERROR 2020-05-31 21:39:01,225  log.py[line:42] 找不到'config/config.conf'路径下的配置文件中的键'borwer_path'
-ERROR 2020-05-31 21:39:01,226  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 105, in get_config
-    raise ConfigException(f'找不到\'{confpath}\'路径下的配置文件中的键\'{keys}\'')
-common.basepage.ConfigException: 找不到'config/config.conf'路径下的配置文件中的键'borwer_path'
-
-INFO 2020-05-31 22:06:01,348  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:06:01,349  log.py[line:34] 调用浏览器
-ERROR 2020-05-31 22:06:01,349  log.py[line:42] '/config/config.conf'路径下没有该配置文件
-ERROR 2020-05-31 22:06:01,350  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 108, in get_config
-    raise ConfigException(f'\'{confpath}\'路径下没有该配置文件')
-common.basepage.ConfigException: '/config/config.conf'路径下没有该配置文件
-
-INFO 2020-05-31 22:06:49,946  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:06:49,947  log.py[line:34] 调用浏览器
-ERROR 2020-05-31 22:06:49,948  log.py[line:42] '/config/config.conf'路径下没有该配置文件
-ERROR 2020-05-31 22:06:49,948  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 109, in get_config
-    raise ConfigException(f'\'{confpath}\'路径下没有该配置文件')
-common.basepage.ConfigException: '/config/config.conf'路径下没有该配置文件
-
-INFO 2020-05-31 22:07:39,873  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:07:39,874  log.py[line:34] 调用浏览器
-ERROR 2020-05-31 22:07:39,876  log.py[line:42] 找不到'config/config.conf'路径下的配置文件中的键'borwer_path'
-ERROR 2020-05-31 22:07:39,876  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 106, in get_config
-    raise ConfigException(f'找不到\'{confpath}\'路径下的配置文件中的键\'{keys}\'')
-common.basepage.ConfigException: 找不到'config/config.conf'路径下的配置文件中的键'borwer_path'
-
-INFO 2020-05-31 22:08:35,494  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:08:35,495  log.py[line:34] 调用浏览器
-ERROR 2020-05-31 22:08:35,495  log.py[line:42] 'config/config.conf'路径下没有该配置文件
-ERROR 2020-05-31 22:08:35,496  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 109, in get_config
-    raise ConfigException(f'\'{confpath}\'路径下没有该配置文件')
-common.basepage.ConfigException: 'config/config.conf'路径下没有该配置文件
-
-INFO 2020-05-31 22:20:29,403  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:20:29,403  log.py[line:34] 调用浏览器
-ERROR 2020-05-31 22:20:29,404  log.py[line:42] 找不到'config/config.conf'路径下的配置文件中的键'borwer_path'
-INFO 2020-05-31 22:20:29,404  log.py[line:34] 选择谷歌浏览器
-ERROR 2020-05-31 22:20:29,404  log.py[line:42] 初始化浏览器失败，原因：local variable 'options' referenced before assignment
-ERROR 2020-05-31 22:20:29,405  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 51, in open_brower
-    self.__driver = webdriver.Chrome(executable_path = path_driver, options = options)
-UnboundLocalError: local variable 'options' referenced before assignment
-
-INFO 2020-05-31 22:20:48,568  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:20:48,568  log.py[line:34] 调用浏览器
-INFO 2020-05-31 22:20:48,570  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-31 22:20:50,107  log.py[line:34] 初始化函数结尾
-INFO 2020-05-31 22:20:52,486  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:20:52,486  log.py[line:34] 调用浏览器
-INFO 2020-05-31 22:20:52,488  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-31 22:20:53,957  log.py[line:34] 初始化函数结尾
-INFO 2020-05-31 22:26:36,749  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:26:36,750  log.py[line:34] 调用浏览器
-INFO 2020-05-31 22:26:36,751  log.py[line:34] 选择谷歌浏览器
-ERROR 2020-05-31 22:26:36,751  log.py[line:42] 初始化浏览器失败，原因：local variable 'options' referenced before assignment
-ERROR 2020-05-31 22:26:36,752  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 51, in open_brower
-    self.__driver = webdriver.Chrome(executable_path = path_driver, options = options)
-UnboundLocalError: local variable 'options' referenced before assignment
-
-INFO 2020-05-31 22:26:40,853  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:26:40,854  log.py[line:34] 调用浏览器
-INFO 2020-05-31 22:26:40,856  log.py[line:34] 选择谷歌浏览器
-ERROR 2020-05-31 22:26:40,856  log.py[line:42] 初始化浏览器失败，原因：local variable 'options' referenced before assignment
-ERROR 2020-05-31 22:26:40,857  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 51, in open_brower
-    self.__driver = webdriver.Chrome(executable_path = path_driver, options = options)
-UnboundLocalError: local variable 'options' referenced before assignment
-
-INFO 2020-05-31 22:31:11,716  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:31:11,717  log.py[line:34] 调用浏览器
-INFO 2020-05-31 22:31:11,718  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-31 22:31:15,791  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:31:15,792  log.py[line:34] 调用浏览器
-INFO 2020-05-31 22:31:15,793  log.py[line:34] 选择谷歌浏览器
-ERROR 2020-05-31 22:31:17,352  log.py[line:42] 初始化浏览器失败，原因：Message: unknown error: cannot find Chrome binary
-
-ERROR 2020-05-31 22:31:17,356  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 56, in open_brower
-    self.__driver = webdriver.Chrome()
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 76, in __init__
-    RemoteWebDriver.__init__(
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
-    self.error_handler.check_response(response)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: unknown error: cannot find Chrome binary
-
-
-INFO 2020-05-31 22:32:12,221  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:32:12,222  log.py[line:34] 调用浏览器
-INFO 2020-05-31 22:32:12,225  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-31 22:32:59,963  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:32:59,964  log.py[line:34] 调用浏览器
-INFO 2020-05-31 22:32:59,965  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-31 22:33:21,540  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:33:21,541  log.py[line:34] 调用浏览器
-INFO 2020-05-31 22:33:21,542  log.py[line:34] 选择谷歌浏览器
-ERROR 2020-05-31 22:33:23,558  log.py[line:42] 初始化浏览器失败，原因：Message: Service E:\\Program\\ChromeMaYi\\guge\\chrome.exe unexpectedly exited. Status code was: 0
-
-ERROR 2020-05-31 22:33:23,559  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 52, in open_brower
-    self.__driver = webdriver.Chrome(executable_path = borwer_path, options = options)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
-    self.service.start()
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\common\service.py", line 98, in start
-    self.assert_process_still_running()
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\common\service.py", line 109, in assert_process_still_running
-    raise WebDriverException(
-selenium.common.exceptions.WebDriverException: Message: Service E:\\Program\\ChromeMaYi\\guge\\chrome.exe unexpectedly exited. Status code was: 0
-
-
-INFO 2020-05-31 22:33:57,482  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:33:57,483  log.py[line:34] 调用浏览器
-INFO 2020-05-31 22:33:57,484  log.py[line:34] 选择谷歌浏览器
-ERROR 2020-05-31 22:33:59,499  log.py[line:42] 初始化浏览器失败，原因：Message: Service E:\\Program\\ChromeMaYi\\guge\\chrome.exe unexpectedly exited. Status code was: 0
-
-ERROR 2020-05-31 22:33:59,503  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 52, in open_brower
-    self.__driver = webdriver.Chrome(executable_path = borwer_path, options = options)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
-    self.service.start()
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\common\service.py", line 98, in start
-    self.assert_process_still_running()
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\common\service.py", line 109, in assert_process_still_running
-    raise WebDriverException(
-selenium.common.exceptions.WebDriverException: Message: Service E:\\Program\\ChromeMaYi\\guge\\chrome.exe unexpectedly exited. Status code was: 0
-
-
-INFO 2020-05-31 22:35:09,240  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:35:09,241  log.py[line:34] 调用浏览器
-INFO 2020-05-31 22:35:29,894  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:35:29,895  log.py[line:34] 调用浏览器
-INFO 2020-05-31 22:35:29,896  log.py[line:34] 选择谷歌浏览器
-ERROR 2020-05-31 22:35:31,440  log.py[line:42] 初始化浏览器失败，原因：Message: unknown error: cannot find Chrome binary
-
-ERROR 2020-05-31 22:35:31,445  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 56, in open_brower
-    self.__driver = webdriver.Chrome()
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 76, in __init__
-    RemoteWebDriver.__init__(
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
-    self.error_handler.check_response(response)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: unknown error: cannot find Chrome binary
-
-
-INFO 2020-05-31 22:35:56,712  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:35:56,713  log.py[line:34] 调用浏览器
-INFO 2020-05-31 22:35:56,718  log.py[line:34] 选择谷歌浏览器
-ERROR 2020-05-31 22:35:56,720  log.py[line:42] 初始化浏览器失败，原因：expected str, bytes or os.PathLike object, not NoneType
-ERROR 2020-05-31 22:35:56,723  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 54, in open_brower
-    self.__driver = webdriver.Chrome(executable_path = borwer_path)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
-    self.service.start()
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
-    self.process = subprocess.Popen(cmd, env=self.env,
-  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 854, in __init__
-    self._execute_child(args, executable, preexec_fn, close_fds,
-  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 1247, in _execute_child
-    args = list2cmdline(args)
-  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 549, in list2cmdline
-    for arg in map(os.fsdecode, seq):
-  File "E:\Program Files\Python\Python38\lib\os.py", line 818, in fsdecode
-    filename = fspath(filename)  # Does type-checking of `filename`.
-TypeError: expected str, bytes or os.PathLike object, not NoneType
-
-INFO 2020-05-31 22:36:01,857  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:36:01,858  log.py[line:34] 调用浏览器
-INFO 2020-05-31 22:36:01,859  log.py[line:34] 选择谷歌浏览器
-ERROR 2020-05-31 22:36:01,860  log.py[line:42] 初始化浏览器失败，原因：expected str, bytes or os.PathLike object, not NoneType
-ERROR 2020-05-31 22:36:01,862  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\GitHub\FirstWeb\common\basepage.py", line 54, in open_brower
-    self.__driver = webdriver.Chrome(executable_path = borwer_path)
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
-    self.service.start()
-  File "e:\Workspaces\GitHub\FirstWeb\env\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
-    self.process = subprocess.Popen(cmd, env=self.env,
-  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 854, in __init__
-    self._execute_child(args, executable, preexec_fn, close_fds,
-  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 1247, in _execute_child
-    args = list2cmdline(args)
-  File "E:\Program Files\Python\Python38\lib\subprocess.py", line 549, in list2cmdline
-    for arg in map(os.fsdecode, seq):
-  File "E:\Program Files\Python\Python38\lib\os.py", line 818, in fsdecode
-    filename = fspath(filename)  # Does type-checking of `filename`.
-TypeError: expected str, bytes or os.PathLike object, not NoneType
-
-INFO 2020-05-31 22:37:00,086  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 22:37:00,087  log.py[line:34] 调用浏览器
-INFO 2020-05-31 22:37:00,088  log.py[line:34] 选择谷歌浏览器
-INFO 2020-05-31 22:37:01,620  log.py[line:34] 初始化函数结尾
-INFO 2020-05-31 23:45:10,021  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 23:45:10,022  log.py[line:34] 调用浏览器
-INFO 2020-05-31 23:45:10,024  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-05-31 23:45:11,481  log.py[line:34] 初始化函数结尾
-INFO 2020-05-31 23:45:41,428  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 23:45:41,428  log.py[line:34] 调用浏览器
-INFO 2020-05-31 23:45:41,430  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-05-31 23:45:42,932  log.py[line:34] 初始化函数结尾
-INFO 2020-05-31 23:45:42,932  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-ERROR 2020-05-31 23:45:42,946  log.py[line:42] 查找元素失败
-INFO 2020-05-31 23:45:42,946  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-05-31 23:47:53,897  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 23:47:53,898  log.py[line:34] 调用浏览器
-INFO 2020-05-31 23:47:53,899  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-05-31 23:47:55,482  log.py[line:34] 初始化函数结尾
-INFO 2020-05-31 23:47:55,483  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-05-31 23:47:56,081  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-05-31 23:48:52,037  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 23:48:52,038  log.py[line:34] 调用浏览器
-INFO 2020-05-31 23:48:52,039  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-05-31 23:48:54,213  log.py[line:34] 初始化函数结尾
-INFO 2020-05-31 23:48:54,213  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-05-31 23:48:54,239  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-05-31 23:48:54,307  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-05-31 23:48:54,318  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-05-31 23:48:54,373  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-05-31 23:48:54,383  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-05-31 23:48:54,441  log.py[line:34] 查找登陆页面_点击登陆按钮中的元素('xpath', '//*[@id="button1"]')
-INFO 2020-05-31 23:48:54,451  log.py[line:34]  点击元素 ('xpath', '//*[@id="button1"]')
-INFO 2020-05-31 23:49:56,454  log.py[line:34] 浏览器构造方法
-INFO 2020-05-31 23:49:56,454  log.py[line:34] 调用浏览器
-INFO 2020-05-31 23:49:56,456  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-05-31 23:49:58,629  log.py[line:34] 初始化函数结尾
-INFO 2020-05-31 23:49:58,629  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-05-31 23:49:58,653  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-05-31 23:49:58,721  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-05-31 23:49:58,730  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-05-31 23:49:58,778  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-05-31 23:49:58,788  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-05-31 23:49:58,833  log.py[line:34] 查找登陆页面_点击登陆按钮中的元素('xpath', '//*[@id="button1"]')
-INFO 2020-05-31 23:49:58,844  log.py[line:34]  点击元素 ('xpath', '//*[@id="button1"]')
-INFO 2020-06-01 00:05:09,140  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 00:05:09,141  log.py[line:34] 调用浏览器
-INFO 2020-06-01 00:05:09,142  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 00:05:11,300  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 00:05:11,302  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 00:05:11,325  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 00:05:11,389  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 00:05:11,399  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 00:05:11,451  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 00:05:11,460  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 00:05:11,513  log.py[line:34] 查找登陆页面_点击登陆按钮中的元素('xpath', '//*[@id="button1"]')
-INFO 2020-06-01 00:05:11,522  log.py[line:34]  点击元素 ('xpath', '//*[@id="button1"]')
-INFO 2020-06-01 00:05:11,563  log.py[line:34] 查找登录页面验证码中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 00:05:11,580  log.py[line:34] 获取元素 ('xpath', '//*[@id="imagecode"]') 的属性 src 值为:http://122.225.207.133:20001/servlet/ImageServlet
-INFO 2020-06-01 00:06:13,703  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 00:06:13,703  log.py[line:34] 调用浏览器
-INFO 2020-06-01 00:06:13,706  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 00:06:15,860  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 00:06:15,860  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 00:06:15,890  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 00:06:15,959  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 00:06:15,970  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 00:06:16,018  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 00:06:16,028  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 00:06:16,073  log.py[line:34] 查找登陆页面_点击登陆按钮中的元素('xpath', '//*[@id="button1"]')
-INFO 2020-06-01 00:06:16,084  log.py[line:34]  点击元素 ('xpath', '//*[@id="button1"]')
-INFO 2020-06-01 00:06:16,124  log.py[line:34] 查找登录页面验证码中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 00:06:16,139  log.py[line:34] 获取元素 ('xpath', '//*[@id="imagecode"]') 的属性 src 值为:http://122.225.207.133:20001/servlet/ImageServlet
-INFO 2020-06-01 00:06:28,860  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 00:06:28,861  log.py[line:34] 调用浏览器
-INFO 2020-06-01 00:06:28,863  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 00:06:31,098  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 00:06:31,098  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 00:06:31,122  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 00:06:31,183  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 00:06:31,192  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 00:06:31,250  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 00:06:31,260  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 00:06:31,313  log.py[line:34] 查找登录页面验证码中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 00:06:31,328  log.py[line:34] 获取元素 ('xpath', '//*[@id="imagecode"]') 的属性 src 值为:http://122.225.207.133:20001/servlet/ImageServlet
-INFO 2020-06-01 00:06:43,642  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 00:06:43,643  log.py[line:34] 调用浏览器
-INFO 2020-06-01 00:06:43,645  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 00:06:45,865  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 00:06:45,865  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 00:06:45,886  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 00:06:45,948  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 00:06:45,958  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 00:06:46,008  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 00:06:46,018  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 00:06:46,066  log.py[line:34] 查找登录页面验证码中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 00:06:46,081  log.py[line:34] 获取元素 ('xpath', '//*[@id="imagecode"]') 的属性 src 值为:http://122.225.207.133:20001/servlet/ImageServlet
-INFO 2020-06-01 00:14:10,273  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 00:14:10,273  log.py[line:34] 调用浏览器
-INFO 2020-06-01 00:14:10,274  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 00:14:12,538  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 00:14:12,538  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 00:14:12,564  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 00:14:12,624  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 00:14:12,635  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 00:14:12,685  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 00:14:12,695  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 00:14:12,742  log.py[line:34] 查找登录页面验证码中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 00:14:12,759  log.py[line:34] 获取元素 ('xpath', '//*[@id="imagecode"]') 的属性 src 值为:http://122.225.207.133:20001/servlet/ImageServlet
-INFO 2020-06-01 19:40:06,356  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 19:40:06,357  log.py[line:34] 调用浏览器
-INFO 2020-06-01 19:40:06,359  log.py[line:34] 初始化谷歌浏览器
-ERROR 2020-06-01 19:40:06,372  log.py[line:42] 初始化浏览器失败，原因：Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
-
-ERROR 2020-06-01 19:40:06,405  log.py[line:42] Traceback (most recent call last):
-  File "e:\Workspaces\Python\FirstWeb\env\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
-    self.process = subprocess.Popen(cmd, env=self.env,
-  File "D:\Programs\Python\Python3.8\lib\subprocess.py", line 854, in __init__
-    self._execute_child(args, executable, preexec_fn, close_fds,
-  File "D:\Programs\Python\Python3.8\lib\subprocess.py", line 1307, in _execute_child
-    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
-  File "c:\Users\Administrator\.vscode\extensions\ms-python.python-2020.5.80290\pythonFiles\lib\python\debugpy\no_wheels\debugpy\_vendored\pydevd\_pydev_bundle\pydev_monkey.py", line 631, in new_CreateProcess
-    return getattr(_subprocess, original_name)(app_name, cmd_line, *args)
-FileNotFoundError: [WinError 2] 系统找不到指定的文件。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "e:\Workspaces\Python\FirstWeb\common\basepage.py", line 55, in open_brower
-    self._driver = webdriver.Chrome(executable_path = driver_path)
-  File "e:\Workspaces\Python\FirstWeb\env\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
-    self.service.start()
-  File "e:\Workspaces\Python\FirstWeb\env\lib\site-packages\selenium\webdriver\common\service.py", line 81, in start
-    raise WebDriverException(
-selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
-
-
-INFO 2020-06-01 19:42:14,153  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 19:42:14,154  log.py[line:34] 调用浏览器
-INFO 2020-06-01 19:42:14,156  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 19:42:51,560  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 19:42:51,561  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 19:42:51,946  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 19:42:53,152  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 19:42:53,173  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 19:42:53,267  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 19:42:53,285  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 19:46:36,752  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 19:46:36,752  log.py[line:34] 调用浏览器
-INFO 2020-06-01 19:46:36,753  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 19:46:40,725  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 19:46:40,726  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-ERROR 2020-06-01 19:46:40,731  log.py[line:42] 查找元素失败
-INFO 2020-06-01 19:46:40,736  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 20:01:56,570  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 20:01:56,571  log.py[line:34] 调用浏览器
-INFO 2020-06-01 20:01:56,572  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 20:02:01,481  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 20:02:01,482  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 20:02:01,502  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 20:02:01,588  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 20:02:01,604  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 20:02:01,672  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 20:02:01,693  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 21:12:07,205  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 21:12:07,206  log.py[line:34] 调用浏览器
-INFO 2020-06-01 21:12:07,207  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 21:12:41,431  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 21:12:41,432  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 21:12:42,162  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 21:12:42,616  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 21:12:42,633  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 21:12:42,718  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 21:12:42,735  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 21:13:06,891  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 21:13:06,891  log.py[line:34] 调用浏览器
-INFO 2020-06-01 21:13:06,892  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 21:13:11,321  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 21:13:11,321  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 21:13:11,350  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 21:13:11,429  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 21:13:11,443  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 21:13:11,514  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 21:13:11,531  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 21:13:12,136  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 21:17:12,369  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 21:17:12,369  log.py[line:34] 调用浏览器
-INFO 2020-06-01 21:17:12,371  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 21:17:16,666  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 21:17:16,666  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 21:17:16,700  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 21:17:16,779  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 21:17:16,795  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 21:17:16,867  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 21:17:16,880  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 21:17:17,354  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 21:18:51,755  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 21:18:51,756  log.py[line:34] 调用浏览器
-INFO 2020-06-01 21:18:51,757  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 21:18:56,641  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 21:18:56,642  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 21:18:56,668  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 21:18:56,740  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 21:18:56,754  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 21:18:56,820  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 21:18:56,835  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 21:18:57,340  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 21:19:01,954  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 21:19:01,954  log.py[line:34] 调用浏览器
-INFO 2020-06-01 21:19:01,955  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 21:19:06,876  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 21:19:06,877  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 21:19:06,916  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 21:19:07,019  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 21:19:07,035  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 21:19:07,177  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 21:19:07,195  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 21:19:07,689  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 21:19:53,701  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 21:19:53,701  log.py[line:34] 调用浏览器
-INFO 2020-06-01 21:19:53,702  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 21:19:57,611  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 21:19:57,611  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 21:19:57,643  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 21:19:57,723  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 21:19:57,738  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 21:19:57,853  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 21:19:57,867  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 21:19:58,353  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 21:21:09,597  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 21:21:09,597  log.py[line:34] 调用浏览器
-INFO 2020-06-01 21:21:09,599  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 21:21:13,891  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 21:21:13,892  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 21:21:13,919  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 21:21:14,008  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 21:21:14,022  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 21:21:14,147  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 21:21:14,161  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 21:21:14,613  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 21:24:05,355  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 21:24:05,356  log.py[line:34] 调用浏览器
-INFO 2020-06-01 21:24:05,357  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 21:24:09,816  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 21:24:09,816  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 21:24:09,855  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 21:24:09,978  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 21:24:10,000  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 21:24:10,098  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 21:24:10,118  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 21:24:10,626  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 21:24:50,681  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 21:24:50,681  log.py[line:34] 调用浏览器
-INFO 2020-06-01 21:24:50,683  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 21:24:54,917  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 21:24:54,917  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 21:24:54,953  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 21:24:55,037  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 21:24:55,050  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 21:24:55,124  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 21:24:55,140  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 21:24:55,618  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 21:25:45,071  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 21:25:45,072  log.py[line:34] 调用浏览器
-INFO 2020-06-01 21:25:45,073  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 21:25:49,192  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 21:25:49,192  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 21:25:49,220  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 21:25:49,337  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 21:25:49,355  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 21:25:49,445  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 21:25:49,461  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 21:25:49,919  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 21:32:04,768  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 21:32:04,768  log.py[line:34] 调用浏览器
-INFO 2020-06-01 21:32:04,771  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 21:32:08,647  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 21:32:08,648  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 21:32:08,676  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 21:32:08,768  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 21:32:08,783  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 21:32:08,859  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 21:32:08,877  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 21:32:09,362  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 22:29:36,196  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 22:29:36,197  log.py[line:34] 调用浏览器
-INFO 2020-06-01 22:29:36,198  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 22:29:38,658  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 22:29:38,658  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 22:29:38,674  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 22:29:38,734  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 22:29:38,743  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 22:29:38,791  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 22:29:38,801  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 22:29:39,321  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:06:29,015  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:06:29,015  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:06:29,017  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:06:33,752  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:06:33,752  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:06:33,769  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:06:33,828  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:06:33,839  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:06:33,891  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:06:33,901  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:06:34,353  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:07:25,729  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:07:25,729  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:07:25,730  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:07:28,486  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:07:28,487  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:07:28,504  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:07:28,566  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:07:28,577  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:07:28,627  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:07:28,639  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:07:29,127  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:10:28,076  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:10:28,077  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:10:28,078  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:10:32,799  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:10:32,799  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:10:32,816  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:10:32,876  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:10:32,888  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:10:32,935  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:10:32,945  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:10:33,394  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:11:39,512  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:11:39,512  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:11:39,522  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:11:43,970  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:11:43,971  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:11:43,987  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:11:44,045  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:11:44,055  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:11:44,103  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:11:44,133  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:11:44,603  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:12:17,070  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:12:17,070  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:12:17,071  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:12:21,585  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:12:21,585  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:12:21,604  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:12:21,659  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:12:21,669  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:12:21,715  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:12:21,725  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:12:22,166  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:12:37,094  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:12:37,094  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:12:37,095  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:12:41,834  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:12:41,835  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:12:41,854  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:12:41,915  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:12:41,926  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:12:41,978  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:12:41,990  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:12:42,550  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:15:15,106  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:15:15,107  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:15:15,107  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:15:17,728  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:15:17,729  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:15:17,744  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:15:17,802  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:15:17,811  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:15:17,857  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:15:17,866  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:15:18,482  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:21:04,777  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:21:04,778  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:21:04,779  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:21:07,712  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:21:07,712  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:21:07,730  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:21:07,786  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:21:07,797  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:21:07,842  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:21:07,852  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:21:08,495  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:25:03,879  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:25:03,879  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:25:03,880  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:25:08,715  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:25:08,715  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:25:08,731  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:25:08,791  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:25:08,802  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:25:08,852  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:25:08,863  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:25:09,471  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:25:51,760  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:25:51,760  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:25:51,763  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:25:56,433  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:25:56,433  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:25:56,450  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:25:56,505  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:25:56,516  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:25:56,565  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:25:56,575  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:25:57,191  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:26:48,703  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:26:48,704  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:26:48,705  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:26:51,536  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:26:51,537  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:26:51,558  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:26:51,616  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:26:51,628  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:26:51,682  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:26:51,695  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:26:52,304  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:30:25,126  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:30:25,126  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:30:25,128  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:30:27,203  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:30:27,203  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-ERROR 2020-06-01 23:30:27,217  log.py[line:42] 查找元素失败
-INFO 2020-06-01 23:30:27,217  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:30:33,010  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:30:33,011  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:30:33,013  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:30:35,968  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:30:35,968  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:30:35,986  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:30:36,050  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:30:36,065  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:30:36,117  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:30:36,129  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:30:36,795  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:41:14,909  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:41:14,910  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:41:14,911  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:41:17,772  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:41:17,772  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:41:17,793  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:41:17,862  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:41:17,872  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:41:17,922  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:41:17,931  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:41:18,591  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:45:57,940  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:45:57,940  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:45:57,941  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:46:00,850  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:46:00,851  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:46:00,868  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:46:00,927  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:46:00,937  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:46:00,992  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:46:01,003  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:46:01,623  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:47:00,087  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:47:00,087  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:47:00,088  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:47:04,704  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:47:04,705  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:47:04,723  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:47:04,781  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:47:04,791  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:47:04,836  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:47:04,845  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:47:05,476  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:48:12,663  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:48:12,664  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:48:12,665  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:48:15,122  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:48:15,122  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:48:15,178  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:48:15,233  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:48:15,245  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:48:15,295  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:48:15,305  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:48:15,921  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:49:19,750  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:49:19,751  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:49:19,752  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:49:24,563  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:49:24,564  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:49:24,582  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:49:24,644  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:49:24,654  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:49:24,702  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:49:24,712  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:49:25,347  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:49:53,630  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:49:53,630  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:49:53,631  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:49:56,492  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:49:56,493  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:49:56,509  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:49:56,566  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:49:56,575  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:49:56,620  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:49:56,631  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:49:57,311  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:50:22,666  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:50:22,666  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:50:22,667  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:50:28,455  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:50:28,456  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:50:28,480  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:50:28,538  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:50:28,549  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:50:28,599  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:50:28,609  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:50:29,228  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:51:00,786  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:51:00,786  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:51:00,787  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:51:08,389  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:51:08,390  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:51:08,420  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:51:08,476  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:51:08,486  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:51:08,533  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:51:08,542  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:51:09,157  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:57:23,342  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:57:23,343  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:57:23,344  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:57:24,973  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:57:24,974  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:57:26,227  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:57:26,287  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:57:26,297  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:57:26,349  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:57:26,359  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:57:27,010  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:58:13,647  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:58:13,647  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:58:13,648  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:58:16,614  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:58:16,614  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:58:16,633  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:58:16,695  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:58:16,704  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:58:16,752  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:58:16,764  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:58:17,415  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-01 23:59:11,303  log.py[line:34] 浏览器构造方法
-INFO 2020-06-01 23:59:11,303  log.py[line:34] 调用浏览器
-INFO 2020-06-01 23:59:11,304  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-01 23:59:14,569  log.py[line:34] 初始化函数结尾
-INFO 2020-06-01 23:59:14,569  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-01 23:59:14,585  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-01 23:59:14,645  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-01 23:59:14,658  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-01 23:59:14,707  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-01 23:59:14,716  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-01 23:59:15,348  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:00:30,293  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:00:30,293  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:00:30,294  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:00:33,093  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:00:33,094  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:00:33,111  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:00:33,177  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:00:33,188  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:00:33,242  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:00:33,252  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:00:33,873  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:01:04,413  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:01:04,414  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:01:04,415  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:01:09,179  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:01:09,179  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:01:09,197  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:01:09,261  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:01:09,271  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:01:09,320  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:01:09,330  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:01:09,964  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:03:36,481  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:03:36,482  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:03:36,483  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:03:39,299  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:03:39,299  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:03:39,317  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:03:39,378  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:03:39,387  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:03:39,435  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:03:39,446  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:03:40,080  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:07:21,381  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:07:21,381  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:07:21,382  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:07:24,473  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:07:24,474  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:07:24,488  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:07:24,556  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:07:24,565  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:07:24,619  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:07:24,628  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:07:25,259  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:13:38,661  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:13:38,662  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:13:38,663  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:13:41,659  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:13:41,659  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:13:41,679  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:13:41,741  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:13:41,750  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:13:41,803  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:13:41,813  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:13:42,427  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:14:37,819  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:14:37,819  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:14:37,822  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:14:40,922  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:14:40,924  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:14:40,943  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:14:41,008  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:14:41,019  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:14:41,067  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:14:41,077  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:14:41,719  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:14:57,139  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:14:57,139  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:14:57,140  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:15:00,095  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:15:00,095  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:15:00,114  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:15:00,179  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:15:00,189  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:15:00,241  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:15:00,249  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:15:00,872  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:15:45,643  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:15:45,643  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:15:45,644  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:15:50,397  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:15:50,397  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:15:50,416  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:15:50,480  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:15:50,491  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:15:50,540  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:15:50,550  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:15:51,152  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:18:55,720  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:18:55,720  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:18:55,721  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:18:58,985  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:18:58,985  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:18:59,005  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:18:59,063  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:18:59,076  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:18:59,127  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:18:59,137  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:18:59,777  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:19:51,333  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:19:51,333  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:19:51,334  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:19:54,246  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:19:54,246  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:19:54,264  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:19:54,338  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:19:54,350  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:19:54,400  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:19:54,411  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:19:55,030  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:20:56,364  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:20:56,364  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:20:56,365  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:20:59,021  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:20:59,022  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:20:59,040  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:20:59,104  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:20:59,115  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:20:59,166  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:20:59,176  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:20:59,813  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:21:55,599  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:21:55,599  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:21:55,600  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:22:00,386  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:22:00,386  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:22:00,406  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:22:00,472  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:22:00,483  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:22:00,537  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:22:00,547  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:22:01,223  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:22:25,829  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:22:25,829  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:22:25,830  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:22:30,679  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:22:30,680  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:22:30,701  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:22:30,762  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:22:30,772  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:22:30,824  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:22:30,833  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:22:31,467  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:22:49,167  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:22:49,167  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:22:49,168  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:22:54,117  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:22:54,117  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:22:54,136  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:22:54,204  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:22:54,214  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:22:54,269  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:22:54,279  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:22:54,892  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:25:56,832  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:25:56,832  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:25:56,833  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:25:59,824  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:25:59,825  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:25:59,837  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:25:59,897  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:25:59,908  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:25:59,957  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:25:59,967  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:26:00,582  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:26:32,258  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:26:32,259  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:26:32,260  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:26:35,204  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:26:35,204  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:26:35,221  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:26:35,287  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:26:35,299  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:26:35,349  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:26:35,362  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:26:36,005  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:26:38,066  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:27:25,574  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:27:25,574  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:27:25,575  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:27:30,342  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:27:30,342  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:27:30,363  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:27:30,428  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:27:30,438  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:27:30,492  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:27:30,502  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:27:31,189  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:27:33,227  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:27:57,908  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:27:57,908  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:27:57,909  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:28:00,472  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:28:00,472  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:28:00,491  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:28:00,558  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:28:00,569  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:28:00,620  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:28:00,630  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:28:01,252  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:28:03,266  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:28:41,586  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:28:41,586  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:28:41,587  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:28:44,506  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:28:44,506  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:28:44,547  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:28:44,605  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:28:44,615  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:28:44,665  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:28:44,674  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:28:45,305  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:28:47,398  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:29:04,300  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:29:04,301  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:29:04,302  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:29:06,976  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:29:06,977  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:29:06,995  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:29:07,062  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:29:07,073  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:29:07,123  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:29:07,134  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:29:07,760  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:29:10,008  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:30:18,196  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:30:18,197  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:30:18,198  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:30:20,947  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:30:20,948  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:30:20,965  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:30:21,032  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:30:21,045  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:30:21,095  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:30:21,104  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:30:21,737  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:30:23,782  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:31:41,753  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:31:41,753  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:31:41,754  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:31:46,251  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:31:46,251  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:31:46,269  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:31:46,340  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:31:46,351  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:31:46,403  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:31:46,416  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:31:47,059  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:31:49,071  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:32:38,579  log.py[line:34] 浏览器构造方法
-INFO 2020-06-02 00:32:38,579  log.py[line:34] 调用浏览器
-INFO 2020-06-02 00:32:38,580  log.py[line:34] 初始化谷歌浏览器
-INFO 2020-06-02 00:32:46,673  log.py[line:34] 初始化函数结尾
-INFO 2020-06-02 00:32:46,673  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
-INFO 2020-06-02 00:32:46,692  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
-INFO 2020-06-02 00:32:46,765  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
-INFO 2020-06-02 00:32:46,774  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
-INFO 2020-06-02 00:32:46,825  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
-INFO 2020-06-02 00:32:46,835  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('0241',)
-INFO 2020-06-02 00:32:47,462  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
-INFO 2020-06-02 00:32:49,420  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
+INFO 2020-06-06 23:26:10,455  log.py[line:34] 浏览器构造方法
+INFO 2020-06-06 23:26:10,458  log.py[line:34] 调用浏览器
+INFO 2020-06-06 23:26:10,460  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-06 23:26:13,504  log.py[line:34] 初始化函数结尾
+INFO 2020-06-06 23:26:13,722  log.py[line:34] 浏览器构造方法
+INFO 2020-06-06 23:26:13,722  log.py[line:34] 调用浏览器
+INFO 2020-06-06 23:26:13,736  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-06 23:26:16,886  log.py[line:34] 初始化函数结尾
+INFO 2020-06-06 23:26:16,886  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-06 23:26:16,905  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-06 23:26:16,967  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-06 23:26:16,978  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-06 23:26:17,035  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-06 23:26:17,052  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-06 23:26:17,217  log.py[line:34] 浏览器构造方法
+INFO 2020-06-06 23:26:17,218  log.py[line:34] 调用浏览器
+INFO 2020-06-06 23:26:17,219  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-06 23:26:20,458  log.py[line:34] 初始化函数结尾
+INFO 2020-06-06 23:26:20,459  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-06 23:26:20,481  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-06 23:26:20,549  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-06 23:26:20,567  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-06 23:26:20,656  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-06 23:26:20,670  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 01:21:46,377  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 01:34:22,431  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 01:36:02,532  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 01:39:15,887  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 01:43:48,685  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 01:44:42,781  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 01:44:50,040  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 01:44:50,040  log.py[line:34] 调用浏览器
+INFO 2020-06-07 01:44:50,042  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 01:44:53,491  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 01:44:53,676  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 01:44:53,676  log.py[line:34] 调用浏览器
+INFO 2020-06-07 01:44:53,677  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 01:44:57,221  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 01:44:57,221  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 01:44:57,237  log.py[line:42] 查找元素失败
+INFO 2020-06-07 01:44:57,237  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 01:44:57,365  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 01:44:57,365  log.py[line:34] 调用浏览器
+INFO 2020-06-07 01:44:57,367  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 01:45:00,847  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 01:45:00,849  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 01:45:00,915  log.py[line:42] 查找元素失败
+INFO 2020-06-07 01:45:00,921  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 01:53:01,270  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 01:53:01,270  log.py[line:34] 调用浏览器
+INFO 2020-06-07 01:53:01,272  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 01:53:04,775  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 01:53:04,936  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 01:53:04,936  log.py[line:34] 调用浏览器
+INFO 2020-06-07 01:53:04,939  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 01:53:10,241  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 01:53:10,242  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 01:53:10,259  log.py[line:42] 查找元素失败
+INFO 2020-06-07 01:53:10,260  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 01:53:10,414  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 01:53:10,415  log.py[line:34] 调用浏览器
+INFO 2020-06-07 01:53:10,417  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 01:53:13,978  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 01:53:13,979  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 01:53:14,058  log.py[line:42] 查找元素失败
+INFO 2020-06-07 01:53:14,058  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 01:57:45,469  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 01:57:45,469  log.py[line:34] 调用浏览器
+INFO 2020-06-07 01:57:45,470  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 01:57:53,864  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 01:57:54,110  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 01:57:54,110  log.py[line:34] 调用浏览器
+INFO 2020-06-07 01:57:54,112  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 01:57:57,275  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 01:57:57,276  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 01:57:57,337  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 01:57:57,419  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 01:57:57,432  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 01:57:57,490  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 01:57:57,502  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 01:57:58,329  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
+INFO 2020-06-07 01:58:05,463  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
+INFO 2020-06-07 01:58:09,897  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 01:58:09,897  log.py[line:34] 调用浏览器
+INFO 2020-06-07 01:58:09,899  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 01:58:13,036  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 01:58:13,037  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 01:58:13,074  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 01:58:13,145  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 01:58:13,157  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 01:58:13,211  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 01:58:13,221  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 01:58:13,862  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
+INFO 2020-06-07 01:58:24,869  log.py[line:34] 查找验证码图片中的元素('xpath', '//*[@id="imagecode"]')
+INFO 2020-06-07 02:00:25,803  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:00:25,804  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:00:25,806  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:00:28,952  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:00:29,170  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:00:29,171  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:00:29,177  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:00:32,270  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:00:32,270  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:00:32,307  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:00:32,376  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:00:32,388  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:00:32,445  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:00:32,455  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:00:32,640  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:00:32,641  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:00:32,643  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:00:37,207  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:00:37,208  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:00:37,279  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:00:37,364  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:00:37,378  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:00:37,447  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:00:37,459  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:00:51,123  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:00:51,124  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:00:51,126  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:01:00,124  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:01:00,125  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:01:00,127  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:01:03,382  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:01:03,633  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:01:03,634  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:01:03,643  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:01:06,782  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:01:06,783  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:01:06,814  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:01:06,894  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:01:06,908  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:01:06,969  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:01:06,983  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:02:33,334  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:02:33,334  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:02:33,336  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:02:36,484  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:02:36,679  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:02:36,680  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:02:36,682  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:02:39,762  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:02:39,763  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:02:39,797  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:02:39,865  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:02:39,878  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:02:39,934  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:02:39,946  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:03:03,478  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:03:03,479  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:03:03,482  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:03:06,541  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:03:14,904  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:03:14,923  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:03:15,006  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:03:15,020  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:03:15,084  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:03:15,097  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:04:17,269  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:04:17,272  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:04:17,290  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:04:21,379  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:04:21,596  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:04:21,597  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:04:21,611  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:04:24,741  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:04:24,742  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:04:24,774  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:04:24,859  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:04:24,872  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:04:24,934  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:04:24,947  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:04:31,759  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:04:31,760  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:04:31,762  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:04:34,955  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:04:34,955  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:04:34,995  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:04:35,071  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:04:35,083  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:04:35,141  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:04:35,154  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:06:08,413  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:06:08,414  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:06:08,416  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:06:10,392  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:06:12,043  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:06:12,044  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:06:12,049  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:06:13,587  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:06:13,588  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 02:06:13,604  log.py[line:42] 查找元素失败
+INFO 2020-06-07 02:06:13,605  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:06:13,736  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:06:13,737  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:06:13,740  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:06:15,256  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:06:15,257  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 02:06:15,284  log.py[line:42] 查找元素失败
+INFO 2020-06-07 02:06:15,285  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:06:39,003  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:06:39,004  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:06:39,005  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:06:40,521  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:06:42,135  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:06:42,136  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:06:42,139  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:06:43,656  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:06:43,656  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 02:06:43,673  log.py[line:42] 查找元素失败
+INFO 2020-06-07 02:06:43,674  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:06:43,799  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:06:43,799  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:06:43,803  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:06:45,313  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:06:45,314  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 02:06:45,328  log.py[line:42] 查找元素失败
+INFO 2020-06-07 02:06:45,329  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:07:09,739  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:07:09,740  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:07:09,742  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:07:11,261  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:07:12,954  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:07:12,962  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:07:12,969  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:07:14,423  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:07:14,424  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 02:07:14,442  log.py[line:42] 查找元素失败
+INFO 2020-06-07 02:07:14,443  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:07:14,580  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:07:14,580  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:07:14,583  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:07:16,102  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:07:16,103  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 02:07:16,130  log.py[line:42] 查找元素失败
+INFO 2020-06-07 02:07:16,131  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:08:30,056  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:08:30,058  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:08:30,060  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:08:31,596  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:08:33,215  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:08:33,215  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:08:33,217  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:08:34,715  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:08:34,715  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 02:08:34,728  log.py[line:42] 查找元素失败
+INFO 2020-06-07 02:08:34,728  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:08:34,848  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:08:34,849  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:08:34,850  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:08:36,329  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:08:36,329  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 02:08:36,347  log.py[line:42] 查找元素失败
+INFO 2020-06-07 02:08:36,347  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:14:36,194  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:14:36,195  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:14:36,198  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:14:37,801  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:16:18,256  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:16:18,257  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:16:18,259  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:16:19,912  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:16:21,538  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:16:21,538  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:16:21,540  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:16:23,046  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:16:23,047  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 02:16:23,070  log.py[line:42] 查找元素失败
+INFO 2020-06-07 02:16:23,072  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:16:23,194  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:16:23,194  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:16:23,196  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:16:25,487  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:16:25,487  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 02:16:25,500  log.py[line:42] 查找元素失败
+INFO 2020-06-07 02:16:25,501  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:17:46,645  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:17:46,647  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:17:46,649  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:17:48,196  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:17:49,871  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:17:49,871  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:17:49,873  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:17:51,570  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:17:51,572  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 02:17:51,593  log.py[line:42] 查找元素失败
+INFO 2020-06-07 02:17:51,595  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:17:51,603  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:17:51,605  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:17:51,608  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:17:54,382  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:17:54,383  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 02:17:54,409  log.py[line:42] 查找元素失败
+INFO 2020-06-07 02:17:54,409  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:20:25,139  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:20:25,139  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:20:25,141  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:20:27,217  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:20:34,655  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:20:34,656  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:20:34,658  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:20:36,832  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:20:36,832  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 02:20:36,848  log.py[line:42] 查找元素失败
+INFO 2020-06-07 02:20:36,848  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:20:36,850  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:20:36,850  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:20:36,852  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:20:39,650  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:20:39,651  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 02:20:39,677  log.py[line:42] 查找元素失败
+INFO 2020-06-07 02:20:39,678  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:23:04,904  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:23:04,909  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:23:04,926  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:23:06,990  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:23:14,718  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:23:14,719  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:23:14,721  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:23:17,447  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:23:17,448  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 02:23:17,466  log.py[line:42] 查找元素失败
+INFO 2020-06-07 02:23:17,467  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:23:17,469  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:23:17,469  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:23:17,470  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:23:20,275  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:23:27,963  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:23:27,964  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:23:27,966  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:23:31,057  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:23:31,058  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 02:23:31,072  log.py[line:42] 查找元素失败
+INFO 2020-06-07 02:23:31,072  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:31:31,709  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:31:31,709  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:31:31,711  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:31:33,684  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:31:36,151  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:31:36,152  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:31:36,156  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:31:37,704  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:31:37,704  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 02:31:37,717  log.py[line:42] 查找元素失败
+INFO 2020-06-07 02:31:37,718  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:31:37,719  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:31:37,733  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:31:37,798  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:31:37,809  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:31:37,863  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:31:37,875  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:32:41,391  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:32:41,391  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:32:41,393  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:32:42,891  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:32:44,543  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:32:44,543  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:32:44,545  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:32:46,049  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:32:46,049  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 02:32:46,067  log.py[line:42] 查找元素失败
+INFO 2020-06-07 02:32:46,071  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:32:46,074  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:32:46,089  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:32:46,158  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:32:46,171  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:32:46,223  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:32:46,233  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:34:17,815  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:34:17,815  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:34:17,816  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:34:19,434  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:34:21,074  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:34:21,079  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:34:21,091  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:34:22,589  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:34:22,591  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+ERROR 2020-06-07 02:34:22,615  log.py[line:42] 查找元素失败
+INFO 2020-06-07 02:34:22,615  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:34:22,617  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:34:22,630  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:34:22,716  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:34:22,728  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:34:22,784  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:34:22,797  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:36:04,260  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:36:04,261  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:36:04,262  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:36:05,769  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:36:07,447  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:36:07,472  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:36:07,543  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:36:07,553  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:36:07,608  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:36:07,619  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('2222',)
+INFO 2020-06-07 02:36:07,694  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:36:07,703  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:36:07,742  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:36:07,751  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:36:07,791  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:36:07,798  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:37:00,115  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:37:00,116  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:37:00,117  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:37:01,634  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:37:03,278  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:37:03,303  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:37:03,416  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:37:03,427  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:37:03,482  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:37:03,492  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('2222',)
+INFO 2020-06-07 02:37:03,564  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:37:03,570  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:37:03,612  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:37:03,620  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:37:03,659  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:37:03,666  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:44:15,915  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:44:15,920  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:44:15,923  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:44:20,214  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:44:21,789  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:44:21,819  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:44:21,895  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:44:21,907  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:44:21,961  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:44:21,972  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('2222',)
+INFO 2020-06-07 02:44:22,044  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:44:22,054  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:44:22,096  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:44:22,104  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:44:22,142  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:44:22,151  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:45:07,234  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:45:07,235  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:45:07,237  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:45:08,736  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:45:10,384  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:45:10,413  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:45:10,482  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:45:10,496  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:45:10,553  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:45:10,563  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('2222',)
+INFO 2020-06-07 02:45:10,624  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:45:10,630  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:45:10,673  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:45:10,678  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:45:10,720  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:45:10,726  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:46:04,732  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:46:04,732  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:46:04,733  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:46:06,277  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:46:07,974  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:46:08,006  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:46:08,067  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:46:08,079  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:46:08,133  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:46:08,147  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('2222',)
+INFO 2020-06-07 02:46:08,209  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:46:08,215  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:46:08,258  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:46:08,264  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:46:08,308  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:46:08,314  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:47:36,659  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:47:36,659  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:47:36,661  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:47:38,183  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:47:39,807  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:47:39,869  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:47:39,954  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:47:39,966  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:47:40,030  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:47:40,043  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('2222',)
+INFO 2020-06-07 02:47:40,100  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:47:40,106  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:47:40,154  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:47:40,162  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:47:40,202  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:47:40,213  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:48:06,150  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:48:06,150  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:48:06,152  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:48:07,652  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:48:09,235  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:48:09,254  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:48:09,347  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:48:09,359  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:48:09,425  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:48:09,435  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('2222',)
+INFO 2020-06-07 02:48:09,495  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:48:09,501  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:48:09,555  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:48:09,563  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:48:09,607  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:48:09,617  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:49:03,283  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:49:03,283  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:49:03,286  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:49:04,818  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:49:06,449  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:49:06,480  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:49:06,541  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:49:06,553  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:49:06,610  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:49:06,620  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('2222',)
+INFO 2020-06-07 02:49:06,677  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:49:06,685  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:49:06,725  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:49:06,734  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:49:06,773  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:49:06,781  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:50:48,687  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:50:48,689  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:50:48,690  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:50:50,172  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:50:51,776  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:50:51,800  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:50:51,876  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:50:51,889  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:50:51,944  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:50:51,956  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('2222',)
+INFO 2020-06-07 02:50:52,019  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:50:52,019  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:50:52,021  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:50:53,538  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:50:55,200  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:50:55,223  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:50:55,294  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:50:55,311  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:50:55,376  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:50:55,386  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:51:54,482  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:51:54,484  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:51:54,487  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:51:55,976  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:51:57,680  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:51:57,730  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:51:57,812  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:51:57,824  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:51:57,886  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:51:57,896  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('2222',)
+INFO 2020-06-07 02:51:57,957  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:51:57,957  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:51:57,959  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:51:59,405  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:52:02,965  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:52:02,991  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:52:03,057  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:52:03,067  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:52:03,128  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:52:03,138  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:52:17,670  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:52:17,671  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:52:17,679  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:52:19,234  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:52:22,703  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:52:22,747  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:52:22,814  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:52:22,826  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:52:22,882  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:52:22,892  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('2222',)
+INFO 2020-06-07 02:52:22,947  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:52:22,947  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:52:22,949  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:52:24,431  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:52:26,085  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:52:26,121  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:52:26,185  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:52:26,196  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:52:26,252  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:52:26,262  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('2222',)
+INFO 2020-06-07 02:52:26,320  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:52:26,320  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:52:26,322  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:52:28,657  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:52:29,546  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:52:29,568  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:52:29,641  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:52:29,652  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:52:29,709  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:52:29,722  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:52:41,138  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:52:41,139  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:52:41,232  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:52:43,307  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:52:45,011  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:52:45,038  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:52:45,115  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:52:45,126  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:52:45,191  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:52:45,201  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('2222',)
+INFO 2020-06-07 02:52:45,263  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:52:45,263  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:52:45,265  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:52:46,781  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:52:48,430  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:52:48,496  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:52:48,563  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:52:48,574  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:52:48,629  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:52:48,640  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('2222',)
+INFO 2020-06-07 02:52:48,701  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:52:48,701  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:52:48,703  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:52:50,509  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:52:52,190  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:52:52,223  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:52:52,295  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:52:52,306  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:52:52,362  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:52:52,373  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
+INFO 2020-06-07 02:54:08,521  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:54:08,521  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:54:08,526  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:54:10,120  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:54:11,750  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:54:11,777  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:54:11,845  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:54:11,855  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:54:11,917  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:54:11,928  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('2222',)
+INFO 2020-06-07 02:54:11,987  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:54:11,987  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:54:11,989  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:54:13,522  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:54:15,156  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:54:15,180  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:54:15,251  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:54:15,261  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:54:15,324  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:54:15,336  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('2222',)
+INFO 2020-06-07 02:54:15,399  log.py[line:34] 浏览器构造方法
+INFO 2020-06-07 02:54:15,400  log.py[line:34] 调用浏览器
+INFO 2020-06-07 02:54:15,401  log.py[line:34] 初始化谷歌浏览器
+INFO 2020-06-07 02:54:16,884  log.py[line:34] 初始化函数结尾
+INFO 2020-06-07 02:54:18,534  log.py[line:34] 查找登陆页面_输入用户名中的元素('xpath', '//*[@id="usrid"]')
+INFO 2020-06-07 02:54:18,565  log.py[line:34]  给元素 ('xpath', '//*[@id="usrid"]') 输入文本内容:('Admin',)
+INFO 2020-06-07 02:54:18,637  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="pwd"]')
+INFO 2020-06-07 02:54:18,647  log.py[line:34]  给元素 ('xpath', '//*[@id="pwd"]') 输入文本内容:('123456',)
+INFO 2020-06-07 02:54:18,705  log.py[line:34] 查找登陆页面_输入密码中的元素('xpath', '//*[@id="vercode"]')
+INFO 2020-06-07 02:54:18,717  log.py[line:34]  给元素 ('xpath', '//*[@id="vercode"]') 输入文本内容:('1234',)
